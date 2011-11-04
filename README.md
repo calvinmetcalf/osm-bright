@@ -76,7 +76,7 @@ OSM2PGSQL is planned but not yet implemented.
 	
 	exit
 
-*to import data you can run 
+* to import data you can run 
 	
 	imposm --read --overwrite-cache --write --optimize --deploy-production-tables -m osm-bright/brightmapping.py -d osm us-northeast.osm.pbf
 
