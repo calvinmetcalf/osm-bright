@@ -9,9 +9,12 @@ The style is still a work in progress and you are encouraged to use the
 [issue tracker][] to note missing features or problems with the current
 implementation. 
 
+This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS
+
 [Carto]: http://github.com/mapbox/carto/
 [TileMill]: http://tilemill.com/
 [issue tracker]: http://github.com/developmentseed/osm-bright/issues/
+[MassDOT]: http://www.massdot.state.ma.us/planning/
 
 Setup Instructions
 ------------------
@@ -48,33 +51,41 @@ downloads.
 OSM Bright requires a PostGIS database imported with [ImpOSM][]. Support for
 OSM2PGSQL is planned but not yet implemented.
 
-to install imposm on ubuntu 11.04
-sudo apt-get install build-essential python-dev protobuf-compiler \
-                      libprotobuf-dev libtokyocabinet-dev python-psycopg2 \
-                      libgeos-c1
-sudo apt-get install python-pip
-sudo pip install imposm
+### Install imposm
+* to install imposm on ubuntu 11.04
+	sudo apt-get install build-essential python-dev protobuf-compiler libprotobuf-dev libtokyocabinet-dev python-psycopg2 libgeos-c1
+	sudo apt-get install python-pip
+	sudo pip install imposm
 
-# once you have it installed run 
-imposm-psqldb > create-db.sh #note the imposm site mis-spells this
-# if your using postgres 9.1 this command won't work, use the file impism9-1.sh
-# you may need to run sudo chmod 775 impism9-1.sh first then:
-sudo su postgres #switch over to the postgres user
-sh ./create-db.sh #or sh ./osm-bright/impism9-1.sh
-# if you don't get any errors then 
-exit
-to import data you can run 
-imposm --read --overwrite-cache --write --optimize --deploy-production-tables -m osm-bright/brightmapping.py -d osm us-northeast.osm.pbf
-# to break that down: 
-# --read reads the data and puts it into the cache
-# --write takes the data in the cache and imports it into the database
-# --optimize cleans stuff up
-# --deploy-production-tables removes the new_ table prefixes, I usually don't do this now and instead run
-# imposm --deploy-prodution-tables -d osm
-# after I make sure it got into the database alright
-# -m osm-bright/brightmapping.py tells it to use our custom mapping file
-# -d osm tells it the name of the database, if you didn't use the defaults change this
-# and last is the name of the file
+* once you have it installed run 
+	imposm-psqldb > create-db.sh #note the imposm site mis-spells this
+* if your using postgres 9.1 this command won't work, use the file impism9-1.sh
+* you may need to run 
+	sudo chmod 775 impism9-1.sh
+* first then:
+	sudo su postgres #switch over to the postgres user
+	sh ./create-db.sh #or sh ./osm-bright/impism9-1.sh
+* if you don't get any errors then 
+	exit
+*to import data you can run 
+	imposm --read --overwrite-cache --write --optimize --deploy-production-tables -m osm-bright/brightmapping.py -d osm us-northeast.osm.pbf
+* to break that down: 
+	--read
+* reads the data and puts it into the cache
+	--overwrite-cache
+* tell is to overwrite anything already in there, **IMPORTANT** you will get an error if you use this on your first import, leave this out the first time.
+	--write
+* takes the data in the cache and imports it into the database
+	--optimize
+* cleans stuff up
+	--deploy-production-tables
+* removes the new_ table prefixes, I usually don't do this now and instead run
+	imposm --deploy-prodution-tables -d osm
+* after I make sure it got into the database alright
+	-m osm-bright/brightmapping.py
+* tells it to use our custom mapping file
+	-d osm
+* tells it the name of the database, if you didn't use the defaults change this and last is the name of the file
 
 
 ### 3. Run configure.py ###
