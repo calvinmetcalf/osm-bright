@@ -210,10 +210,9 @@ railways = LineStrings(
             'monorail',
     ),
         'route': (
-'subway',
-'light_rail',
-),
-}
+						'subway',
+						'light_rail',
+		)}
 )
 
 waterways = LineStrings(
@@ -364,6 +363,9 @@ landusages = Polygons(
 
 amenities = Points(
     name='amenities',
+    fields = (
+        ('park_ride', String()),
+    ),
     mapping = {
         'amenity': (
             'university',
@@ -374,6 +376,19 @@ amenities = Points(
             'fire_station',
             'police',
             'townhall',
+            'college',
+            'kindergarten',
+            'preschool',
+            'veterinary',
+            'doctors',
+            'pharmacy',
+            'bicycle_parking',
+            'parking',
+            'car_rental',
+            'car_sharing',
+            'car_wash',
+            'ferry_terminal',
+            'grit_bin',
         ),
 })
 

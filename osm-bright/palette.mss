@@ -57,7 +57,7 @@
  *         inner fill (inline).
  */
 
-@motorway_line:     #4888d8;
+@motorway_line:     #D84F48;
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     darken(@motorway_line,20%);
 
@@ -65,13 +65,13 @@
 @trunk_fill:        @motorway_fill;
 @trunk_case:        @motorway_case;
 
-@primary_line:      darken(#f9cf66,20%);
-@primary_fill:      lighten(#f9cf66,20%);
-@primary_case:      @primary_line;
+@primary_line:      #4888d8;
+@primary_fill:      lighten(@primary_line,10%);
+@primary_case:      darken(@primary_line,20%);
 
-@secondary_line:    @primary_line;
-@secondary_fill:    @primary_fill;
-@secondary_case:    @primary_case;
+@secondary_line:    darken(#f9cf66,20%);
+@secondary_fill:    lighten(#f9cf66,20%);
+@secondary_case:    @secondary_line;
 
 @standard_line:     @land * 0.9;
 @standard_fill:     #fff;

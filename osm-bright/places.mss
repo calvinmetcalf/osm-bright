@@ -105,7 +105,7 @@
 
 
 
-/* ==== AREA LABELS ================================================ */
+/* ==== AREA LABELS ================================================ 
 
 #landuse_label[zoom>12][area>1000000] {
   [type='industrial'],[type='commercial'],[type='parking'],
@@ -156,33 +156,140 @@
   }
 }
 
-.amenity[zoom>=15][type='hospital'] name {
+.amenity[zoom>=15][type='hospital']  {
+  text-name:'[name]';
   text-allow-overlap: false;
-  text-face-name: 'Arial Regular';
+  text-face-name: 'Ubuntu Regular';
   text-fill: #999;
   text-halo-fill: #fff;
   text-halo-radius: 1;
   text-min-distance: 20;
   text-placement: line;
 }
-
+*/
 /* Education */
-.amenity[zoom>=15][amenity='college'] { point-file: url(./res/school-college-10.png); }
-.amenity[zoom>=15][amenity='kindergarten'] { point-file: url(./res/school-elementary-10.png); }
-.amenity[zoom>=15][type='library'] { point-file: url(./res/library-10.png); }
-.amenity[zoom>=15][type='school'] { point-file: url(./res/school-elementary-10.png); }
-.amenity[zoom>=15][type='university'] { point-file: url(./res/school-college-10.png); }
-
-/* Health */
+[type='college']#amenity[zoom=15] { point-file: url(/home/planner/png/education_college.glow.12.png); }
+[type='college']#amenity[zoom=16] { point-file: url(/home/planner/png/education_college.glow.16.png); }
+[type='college']#amenity[zoom=17] { point-file: url(/home/planner/png/education_college.glow.20.png); }
+[type='college']#amenity[zoom=18] { point-file: url(/home/planner/png/education_college.glow.24.png); }
+[type='library']#amenity[zoom=15] { point-file: url(/home/planner/png/amenity_library.glow.12.png); }
+[type='library']#amenity[zoom=16] { point-file: url(/home/planner/png/amenity_library.glow.16.png); }
+[type='library']#amenity[zoom=17] { point-file: url(/home/planner/png/amenity_library.glow.20.png); }
+[type='library']#amenity[zoom=18] { point-file: url(/home/planner/png/amenity_library.glow.224.png); }
+[type='school']#amenity[zoom=15] { point-file: url(/home/planner/png/education_school.glow.12.png); }
+[type='school']#amenity[zoom=16] { point-file: url(/home/planner/png/education_school.glow.16.png); }
+[type='school']#amenity[zoom=17] { point-file: url(/home/planner/png/education_school.glow.20.png); }
+[type='school']#amenity[zoom=18] { point-file: url(/home/planner/png/education_school.glow.24.png); }
+[type='university']#amenity[zoom=15] { point-file: url(/home/planner/png/education_university.glow.12.png); }
+[type='university']#amenity[zoom=16] { point-file: url(/home/planner/png/education_university.glow.16.png); }
+[type='university']#amenity[zoom=17] { point-file: url(/home/planner/png/education_university.glow.20.png); }
+[type='university']#amenity[zoom=18] { point-file: url(/home/planner/png/education_university.glow.24.png); }
+[type='hospital']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/health_hospital.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/health_hospital.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/health_hospital.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/health_hospital.glow.24.png); }
+    }
+[type='dentist']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/health_dentist.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/health_dentist.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/health_dentist.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/health_dentist.glow.24.png); }
+    }
+[type='doctors']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/health_doctors.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/health_doctors.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/health_doctors.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/health_doctors.glow.24.png); }
+    }
+[type='pharmacy']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/health_pharmacy.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/health_pharmacy.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/health_pharmacy.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/health_pharmacy.glow.24.png); }
+    }
+[type='veterinary']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/health_veterinary.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/health_veterinary.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/health_veterinary.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/health_veterinary.glow.24.png); }
+    }
+[type='parking']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_parking.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_parking.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_parking.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_parking.glow.24.png); }
+    }
+[type='bicycle_parking']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.24.png); }
+    }
+[type='car_rental']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_rental_car.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_rental_car.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_rental_car.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_rental_car.glow.24.png); }
+    }
+[type='car_sharing']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_car_share.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_car_share.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_car_share.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_car_share.glow.24.png); }
+    }
+/*[type='car_wash']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.24.png); }
+    }*/
+[type='ferry_terminal']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_port.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_port.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_port.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_port.glow.24.png); }
+    }
+/*[type='grit_bin']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.24.png); }
+    }*/
+[type='fuel']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/transport_fuel.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_fuel.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_fuel.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_fuel.glow.24.png); }
+    }
+[type='fire_station']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/amenity_firestation.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/amenity_firestation.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/amenity_firestation.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/amenity_firestation.glow.24.png); }
+    }
+[type='police']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/amenity_police.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/amenity_police.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/amenity_police.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/amenity_police.glow.24.png); }
+    }
+[type='townhall']#amenity{
+[zoom=15]{ point-file: url(/home/planner/png/amenity_town_hall.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/amenity_town_hall.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/amenity_town_hall.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/amenity_town_hall.glow.24.png); }
+    }
+/* Health 
 .amenity[zoom>=16][amenity='baby_hatch'] {  }
 .amenity[zoom>=16][amenity='dentist'] {  }
 .amenity[zoom>=16][amenity='doctors'] {  }
-.amenity[zoom>=15][type='hospital'] { point-file: url(./res/medical-10.png); }
+[type='hospital']#amenity[zoom>=15] { point-file: url(./res/medical-10.png); }
 .amenity[zoom>=16][type='hospital'] { point-file: url(./res/medical-15.png); }
 .amenity[zoom>=16][amenity='pharmacy'] {  }
 .amenity[zoom>=16][amenity='veterinary'] {  }
-
-/* Transportation */
+*/
+/* Transportation 
 .amenity[zoom>=15][amenity='bicycle_parking'] {  }
 .amenity[zoom>=15][amenity='bicycle_rental'] {  }
 .amenity[zoom>=15][amenity='bus_station'] { point-file: url(./res/bus-10.png); }
@@ -193,21 +300,21 @@
 .amenity[zoom>=15][type='fuel'] { point-file: url(./res/fuel-10.png); }
 .amenity[zoom>=15][amenity='grit_bin'] {  }
 .amenity[zoom>=15][amenity='taxi'] {  }
-
-/* Financial */
+*/
+/* Financial 
 .amenity[zoom>=16][amenity='atm'] {  }
 .amenity[zoom>=16][amenity='bank'] {  }
 .amenity[zoom>=16][amenity='bureau_de_change'] {  }
-
-/* Food/Drink */
+*/
+/* Food/Drink 
 .amenity[zoom>=16][amenity='bar'] { point-file: url(./res/restaurant-10.png);  }
 .amenity[zoom>=16][amenity='cafe'] { point-file: url(./res/cafe-10.png); }
 .amenity[zoom>=16][amenity='fast_food'] { point-file: url(./res/restaurant-10.png);  }
 .amenity[zoom>=16][amenity='food_court'] { point-file: url(./res/restaurant-10.png);  }
 .amenity[zoom>=16][amenity='pub'] { point-file: url(./res/restaurant-10.png);  }
 .amenity[zoom>=16][amenity='restaurant'] { point-file: url(./res/restaurant-10.png); }
-
-/* Entertainment, Arts, Culture */
+*/
+/* Entertainment, Arts, Culture 
 .amenity[zoom>=16][amenity='architect_office'] {  }
 .amenity[zoom>=16][amenity='arts_centre'] {  }
 .amenity[zoom>=16][amenity='cinema'] { point-file: url(./res/cinema-10.png); }
@@ -217,8 +324,8 @@
 .amenity[zoom>=16][amenity='stripclub'] {  }
 .amenity[zoom>=16][amenity='studio'] {  }
 .amenity[zoom>=16][amenity='theatre'] {  }
-
-/* Public */
+*/
+/* Public 
 .amenity[zoom>=16][amenity='courthouse'] {  }
 .amenity[zoom>=16][type='fire_station'] {  }
 .amenity[zoom>=16][amenity='grave_yard'] {  }
@@ -229,8 +336,8 @@
 .amenity[zoom>=16][amenity='public_building'] {  }
 .amenity[zoom>=16][amenity='shelter'] {  }
 .amenity[zoom>=16][type='townhall'] { point-file: url(./res/town-hall-10.png); }
-
-/* Public - small */
+*/
+/* Public - small 
 .amenity[zoom>=17][amenity='bench'] {  }
 .amenity[zoom>=17][amenity='post_box'] {  }
 .amenity[zoom>=17][amenity='recycling'] {  }
@@ -239,3 +346,4 @@
 .amenity[zoom>=17][amenity='vending_machine'] {  }
 .amenity[zoom>=17][amenity='waste_basket'] {  }
 .amenity[zoom>=17][amenity='waste_disposal'] {  }
+*/

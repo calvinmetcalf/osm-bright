@@ -1,19 +1,29 @@
 {
   "bounds": [
-    -75,
-    39,
+    -74,
+    41,
     -69,
-    45
+    43
   ],
   "center": [
-    -73.02037775515997,
-    39.858005851543,
-    6
+    -71.06496715545624,
+    42.350763842433956,
+    18
   ],
   "format": "png",
-  "interactivity": false,
+  "interactivity": {
+    "layer": "moterway",
+    "template_teaser": "[RouteSyste][RouteNumbe] also known as [StreetName]",
+    "template_full": "",
+    "template_location": "",
+    "fields": [
+      "RouteSyste",
+      "RouteNumbe",
+      "StreetName"
+    ]
+  },
   "minzoom": 0,
-  "maxzoom": 22,
+  "maxzoom": 18,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "palette.mss",
@@ -245,6 +255,26 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
     },
     {
+      "geometry": "linestring",
+      "name": "town",
+      "id": "town",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/town.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "count",
+      "id": "count",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/count.shp"
+      }
+    },
+    {
       "Datasource": {
         "dbname": "osm",
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
@@ -254,7 +284,7 @@
         "key_field": "",
         "password": "osm",
         "port": "5432",
-        "project": "osm-bright",
+        "project": "osm-bright-imposm",
         "table": "osm_admin",
         "type": "postgis",
         "user": "osm"
@@ -332,18 +362,19 @@
     },
     {
       "Datasource": {
-        "table": "(select geometry, type, tunnel, colour\nfrom osm_railways\n) as railway",
-        "key_field": "",
-        "geometry_field": "geometry",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "type": "postgis",
         "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
         "host": "localhost",
-        "port": "5432",
-        "user": "osm",
-        "password": "osm",
         "id": "rail",
-        "project": "osm-bright"
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, tunnel\nfrom osm_railways\n) as railway",
+        "type": "postgis",
+        "user": "osm"
       },
       "class": "",
       "geometry": "linestring",
@@ -354,22 +385,25 @@
     },
     {
       "Datasource": {
-        "dbname": "osm",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "geometry_field": "geometry",
-        "host": "localhost",
+        "table": "(select geometry, type, park_ride from osm_amenities) as am",
         "key_field": "",
-        "password": "osm",
-        "port": "5432",
-        "table": "(select geometry from osm_transport_points where type = 'turning_circle') as foo",
+        "geometry_field": "geometry",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
         "type": "postgis",
-        "user": "osm"
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "am",
+        "project": "osm-bright",
+        "srs": null
       },
-      "class": "turning_circle case",
+      "class": "am",
       "geometry": "point",
-      "id": "turning_circle_case",
-      "name": "turning_circle_case",
-      "srs": "+init=epsg:3857"
+      "id": "am",
+      "name": "am",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
     },
     {
       "Datasource": {
@@ -468,29 +502,6 @@
       "geometry": "linestring",
       "id": "bridge",
       "name": "bridge",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "status": "on"
-    },
-    {
-      "Datasource": {
-        "dbname": "osm",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "geometry_field": "geometry",
-        "host": "localhost",
-        "id": "place",
-        "key_field": "",
-        "password": "osm",
-        "port": "5432",
-        "project": "foss4g-2011",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "(select geometry, type, name, z_order, population\nfrom osm_places\norder by z_order, population desc\n) as places",
-        "type": "postgis",
-        "user": "osm"
-      },
-      "class": "",
-      "geometry": "point",
-      "id": "place",
-      "name": "place",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "status": "on"
     },
@@ -631,8 +642,211 @@
       "name": "waterway_label",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "status": "on"
+    },
+    {
+      "geometry": "linestring",
+      "name": "residential",
+      "id": "residential",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/residential.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "tertiary",
+      "id": "tertiary",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/tertiary.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "secondary",
+      "id": "secondary",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/secondary.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "primary",
+      "id": "primary",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/primary.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "moterway",
+      "id": "moterway",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/moterway.shp",
+        "id": "moterway",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "subway",
+      "id": "subway",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/subway.shp",
+        "id": "subway",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "bike",
+      "id": "bike",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/bike.shp",
+        "id": "bike",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "stop",
+      "id": "stop",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/substop.shp",
+        "id": "stop",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "trans",
+      "id": "trans",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": " (select geometry, type, ref from osm_transport_points ) as trans",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "trans",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "place",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright",
+        "srs": null,
+        "table": "(select geometry, type, name, z_order, population\nfrom osm_places\norder by z_order, population desc\n) as places",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "place",
+      "name": "place",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "geometry": "linestring",
+      "name": "is",
+      "id": "is",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/moterway.shp",
+        "id": "is",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "p",
+      "id": "p",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/primary.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "s",
+      "id": "s",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/secondary.shp"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "t",
+      "id": "t",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road1027/tertiary.shp"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "amenity",
+      "id": "amenity",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select geometry, type, park_ride from osm_amenities) as amenity",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "amenity",
+        "project": "osm-bright",
+        "srs": null
+      }
     }
   ],
+  "name": "ma-bright",
   "description": "",
   "attribution": "",
   "legend": ""

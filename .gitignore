@@ -1,2 +1,4 @@
+configure.py
+osm-bright/layers/*
+*.mml
 
-osm-bright/layers/land
