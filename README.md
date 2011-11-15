@@ -9,12 +9,13 @@ The style is still a work in progress and you are encouraged to use the
 [issue tracker][] to note missing features or problems with the current
 implementation. 
 
-This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS.   This update has some fairly massive changes first off for the icons your going to need to grab my fork of the [open svg map icon set](https://github.com/calvinmetcalf/Open-SVG-Map-Icons) your also going to need a copy of the [road inventory shapefile](http://www.eot.state.ma.us/default.asp?pgid=content/plan02&sid=about) and to first convert it to wgs84 and then filter it by functional class (you'll need files for functional classes 1, 2, and 3) and you will also need to make a second copy in geojson format. you'll also need to grab the train layers from mass gis, the depot and bike stuff arn't availible online at the moment so you'll need to comment that out, same with the t icon.
+This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS.   This update has some fairly massive changes, see the bottom.
 
 [Carto]: http://github.com/mapbox/carto/
 [TileMill]: http://tilemill.com/
 [issue tracker]: http://github.com/developmentseed/osm-bright/issues/
 [MassDOT]: http://www.massdot.state.ma.us/planning/
+
 
 Setup Instructions
 ------------------
@@ -115,8 +116,17 @@ OSM2PGSQL is planned but not yet implemented.
 * tells it the name of the database, if you didn't use the defaults change this and last is the name of the file
 
 ### 3. Run configure.py ###
+Open up the configure.py script included in in here and download the two layers processed p and shoreline 300 the address is in the file, unzip them and change the lines underneath them to the path to them on your system. If you followed the default postgres instructions you shouldn't need to touch the database parts, but if you didn't, go wild on that. then run it. Then either copy or link the inner osm-bright folder to your mapbox projects folder (default on ubuntu with the up to date tilemill /home/yourname/Documents/MapBox/project/ older ones is at /usr/share/mapbox/project/)
 
-Included in with this style is a configuration script to help you adjust
-parameters such as the database connection information and a few other things.
+for the icons your going to need to grab my fork of the [open svg map icon set](https://github.com/calvinmetcalf/Open-SVG-Map-Icons) then you need to run the script called "generatepng.sh" in tools and then eitehr copy or link the png folder into the osm-bright folder (i.e. into the folder that also has res in it).  your going to also want to grab the [zip file here][] unzip the folder called "data" and also link or move that into the osm-bright folder. If you don't have the Ubuntu font and want to use it, you can get it from the [ubuntu site][].
 
-TODO: go on...
+
+[zip file here]: http://services.massdot.state.ma.us/maptemplate/downloads/data.zip
+[ubuntu site]: http://font.ubuntu.com/
+
+## TODO ##
+
+* improve the shields so they are different sizes on different zooms.
+* walking paths
+* get rid of as many of the geojson files as possible in favor of osm data to make it slightly less massachusetts centric
+

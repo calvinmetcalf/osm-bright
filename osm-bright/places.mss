@@ -168,199 +168,199 @@
 }
 */
 /* Education */
-[type='college']#amenity[zoom=15] { point-file: url(/home/planner/png/education_college.glow.12.png); }
-[type='college']#amenity[zoom=16] { point-file: url(/home/planner/png/education_college.glow.16.png); }
-[type='college']#amenity[zoom=17] { point-file: url(/home/planner/png/education_college.glow.20.png); }
-[type='college']#amenity[zoom=18] { point-file: url(/home/planner/png/education_college.glow.24.png); }
-[type='library']#amenity[zoom=15] { point-file: url(/home/planner/png/amenity_library.glow.12.png); }
-[type='library']#amenity[zoom=16] { point-file: url(/home/planner/png/amenity_library.glow.16.png); }
-[type='library']#amenity[zoom=17] { point-file: url(/home/planner/png/amenity_library.glow.20.png); }
-[type='library']#amenity[zoom=18] { point-file: url(/home/planner/png/amenity_library.glow.224.png); }
-[type='school']#amenity[zoom=15] { point-file: url(/home/planner/png/education_school.glow.12.png); }
-[type='school']#amenity[zoom=16] { point-file: url(/home/planner/png/education_school.glow.16.png); }
-[type='school']#amenity[zoom=17] { point-file: url(/home/planner/png/education_school.glow.20.png); }
-[type='school']#amenity[zoom=18] { point-file: url(/home/planner/png/education_school.glow.24.png); }
-[type='university']#amenity[zoom=15] { point-file: url(/home/planner/png/education_university.glow.12.png); }
-[type='university']#amenity[zoom=16] { point-file: url(/home/planner/png/education_university.glow.16.png); }
-[type='university']#amenity[zoom=17] { point-file: url(/home/planner/png/education_university.glow.20.png); }
-[type='university']#amenity[zoom=18] { point-file: url(/home/planner/png/education_university.glow.24.png); }
+[type='college']#amenity[zoom=15] { point-file: url(png/education_college.glow.12.png); }
+[type='college']#amenity[zoom=16] { point-file: url(png/education_college.glow.16.png); }
+[type='college']#amenity[zoom=17] { point-file: url(png/education_college.glow.20.png); }
+[type='college']#amenity[zoom=18] { point-file: url(png/education_college.glow.24.png); }
+[type='library']#amenity[zoom=15] { point-file: url(png/amenity_library.glow.12.png); }
+[type='library']#amenity[zoom=16] { point-file: url(png/amenity_library.glow.16.png); }
+[type='library']#amenity[zoom=17] { point-file: url(png/amenity_library.glow.20.png); }
+[type='library']#amenity[zoom=18] { point-file: url(png/amenity_library.glow.224.png); }
+[type='school']#amenity[zoom=15] { point-file: url(png/education_school.glow.12.png); }
+[type='school']#amenity[zoom=16] { point-file: url(png/education_school.glow.16.png); }
+[type='school']#amenity[zoom=17] { point-file: url(png/education_school.glow.20.png); }
+[type='school']#amenity[zoom=18] { point-file: url(png/education_school.glow.24.png); }
+[type='university']#amenity[zoom=15] { point-file: url(png/education_university.glow.12.png); }
+[type='university']#amenity[zoom=16] { point-file: url(png/education_university.glow.16.png); }
+[type='university']#amenity[zoom=17] { point-file: url(png/education_university.glow.20.png); }
+[type='university']#amenity[zoom=18] { point-file: url(png/education_university.glow.24.png); }
 [type='hospital']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/health_hospital.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/health_hospital.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/health_hospital.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/health_hospital.glow.24.png); }
+[zoom=15]{ point-file: url(png/health_hospital.glow.12.png); }
+[zoom=16]{ point-file: url(png/health_hospital.glow.16.png); }
+[zoom=17]{ point-file: url(png/health_hospital.glow.20.png); }
+[zoom=18]{ point-file: url(png/health_hospital.glow.24.png); }
     }
 [type='dentist']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/health_dentist.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/health_dentist.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/health_dentist.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/health_dentist.glow.24.png); }
+[zoom=15]{ point-file: url(png/health_dentist.glow.12.png); }
+[zoom=16]{ point-file: url(png/health_dentist.glow.16.png); }
+[zoom=17]{ point-file: url(png/health_dentist.glow.20.png); }
+[zoom=18]{ point-file: url(png/health_dentist.glow.24.png); }
     }
 [type='doctors']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/health_doctors.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/health_doctors.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/health_doctors.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/health_doctors.glow.24.png); }
+[zoom=15]{ point-file: url(png/health_doctors.glow.12.png); }
+[zoom=16]{ point-file: url(png/health_doctors.glow.16.png); }
+[zoom=17]{ point-file: url(png/health_doctors.glow.20.png); }
+[zoom=18]{ point-file: url(png/health_doctors.glow.24.png); }
     }
 [type='pharmacy']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/health_pharmacy.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/health_pharmacy.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/health_pharmacy.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/health_pharmacy.glow.24.png); }
+[zoom=15]{ point-file: url(png/health_pharmacy.glow.12.png); }
+[zoom=16]{ point-file: url(png/health_pharmacy.glow.16.png); }
+[zoom=17]{ point-file: url(png/health_pharmacy.glow.20.png); }
+[zoom=18]{ point-file: url(png/health_pharmacy.glow.24.png); }
     }
 [type='veterinary']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/health_veterinary.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/health_veterinary.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/health_veterinary.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/health_veterinary.glow.24.png); }
+[zoom=15]{ point-file: url(png/health_veterinary.glow.12.png); }
+[zoom=16]{ point-file: url(png/health_veterinary.glow.16.png); }
+[zoom=17]{ point-file: url(png/health_veterinary.glow.20.png); }
+[zoom=18]{ point-file: url(png/health_veterinary.glow.24.png); }
     }
 [type='parking']#amenity{
   [park_ride='bus']{
-    [zoom=15]{ point-file: url(/home/planner/png/transport_park_ride_bus.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_park_ride_bus.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_park_ride_bus.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_park_ride_bus.glow.24.png); }
+    [zoom=15]{ point-file: url(png/transport_park_ride_bus.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_park_ride_bus.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_park_ride_bus.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_park_ride_bus.glow.24.png); }
     }
    [park_ride='yes']{
-[zoom=15]{ point-file: url(/home/planner/png/transport_park_ride_car.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_park_ride_car.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_park_ride_car.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_park_ride_car.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_park_ride_car.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_park_ride_car.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_park_ride_car.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_park_ride_car.glow.24.png); }
   }
-  [zoom=15]{ point-file: url(/home/planner/png/transport_parking.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_parking.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_parking.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_parking.glow.24.png); }
+  [zoom=15]{ point-file: url(png/transport_parking.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_parking.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_parking.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_parking.glow.24.png); }
   }
 [type='bicycle_parking']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_parking_bicycle.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_parking_bicycle.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_parking_bicycle.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_parking_bicycle.glow.24.png); }
     }
 [type='car_rental']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_rental_car.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_rental_car.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_rental_car.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_rental_car.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_rental_car.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_rental_car.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_rental_car.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_rental_car.glow.24.png); }
     }
 [type='car_sharing']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_car_share.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_car_share.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_car_share.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_car_share.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_car_share.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_car_share.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_car_share.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_car_share.glow.24.png); }
     }
 /*[type='car_wash']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_parking_bicycle.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_parking_bicycle.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_parking_bicycle.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_parking_bicycle.glow.24.png); }
     }*/
 [type='ferry_terminal']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_port.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_port.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_port.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_port.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_port.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_port.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_port.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_port.glow.24.png); }
     }
 /*[type='grit_bin']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_parking_bicycle.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_parking_bicycle.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_parking_bicycle.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_parking_bicycle.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_parking_bicycle.glow.24.png); }
     }*/
 [cng=0]#fuel{
-[zoom=14]{ point-file: url(/home/planner/png/transport_fuel.glow.12.png); }
-[zoom=15]{ point-file: url(/home/planner/png/transport_fuel.glow.16.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_fuel.glow.20.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_fuel.glow.24.png); }
-  [zoom=18]{ point-file: url(/home/planner/png/transport_fuel.glow.32.png); }
+[zoom=14]{ point-file: url(png/transport_fuel.glow.12.png); }
+[zoom=15]{ point-file: url(png/transport_fuel.glow.16.png); }
+[zoom=16]{ point-file: url(png/transport_fuel.glow.20.png); }
+[zoom=17]{ point-file: url(png/transport_fuel.glow.24.png); }
+  [zoom=18]{ point-file: url(png/transport_fuel.glow.32.png); }
     }
 [cng=1]#fuel{
-[zoom=14]{ point-file: url(/home/planner/png/transport_fuel_cng.glow.12.png); }
-[zoom=15]{ point-file: url(/home/planner/png/transport_fuel_cng.glow.16.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_fuel_cng.glow.20.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_fuel_cng.glow.24.png); }
-  [zoom=18]{ point-file: url(/home/planner/png/transport_fuel_cng.glow.32.png); }
+[zoom=14]{ point-file: url(png/transport_fuel_cng.glow.12.png); }
+[zoom=15]{ point-file: url(png/transport_fuel_cng.glow.16.png); }
+[zoom=16]{ point-file: url(png/transport_fuel_cng.glow.20.png); }
+[zoom=17]{ point-file: url(png/transport_fuel_cng.glow.24.png); }
+  [zoom=18]{ point-file: url(png/transport_fuel_cng.glow.32.png); }
     }
 [type='fire_station']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/amenity_firestation.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/amenity_firestation.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_firestation.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_firestation.glow.24.png); }
+[zoom=15]{ point-file: url(png/amenity_firestation.glow.12.png); }
+[zoom=16]{ point-file: url(png/amenity_firestation.glow.16.png); }
+[zoom=17]{ point-file: url(png/amenity_firestation.glow.20.png); }
+[zoom=18]{ point-file: url(png/amenity_firestation.glow.24.png); }
     }
 [type='police']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/amenity_police.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/amenity_police.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_police.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_police.glow.24.png); }
+[zoom=15]{ point-file: url(png/amenity_police.glow.12.png); }
+[zoom=16]{ point-file: url(png/amenity_police.glow.16.png); }
+[zoom=17]{ point-file: url(png/amenity_police.glow.20.png); }
+[zoom=18]{ point-file: url(png/amenity_police.glow.24.png); }
     }
 [type='taxi']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/transport_taxi_rank.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_taxi_rank.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_taxi_rank.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/transport_taxi_rank.glow.24.png); }
+[zoom=15]{ point-file: url(png/transport_taxi_rank.glow.12.png); }
+[zoom=16]{ point-file: url(png/transport_taxi_rank.glow.16.png); }
+[zoom=17]{ point-file: url(png/transport_taxi_rank.glow.20.png); }
+[zoom=18]{ point-file: url(png/transport_taxi_rank.glow.24.png); }
     }
 [type='townhall']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/amenity_town_hall.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/amenity_town_hall.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_town_hall.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_town_hall.glow.24.png); }
+[zoom=15]{ point-file: url(png/amenity_town_hall.glow.12.png); }
+[zoom=16]{ point-file: url(png/amenity_town_hall.glow.16.png); }
+[zoom=17]{ point-file: url(png/amenity_town_hall.glow.20.png); }
+[zoom=18]{ point-file: url(png/amenity_town_hall.glow.24.png); }
     }
 [type='atm']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/money_atm2.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/money_atm2.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/money_atm2.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/money_atm2.glow.24.png); }
+[zoom=15]{ point-file: url(png/money_atm2.glow.12.png); }
+[zoom=16]{ point-file: url(png/money_atm2.glow.16.png); }
+[zoom=17]{ point-file: url(png/money_atm2.glow.20.png); }
+[zoom=18]{ point-file: url(png/money_atm2.glow.24.png); }
     }
 [type='bank']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/money_bank2.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/money_bank2.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/money_bank2.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/money_bank2.glow.24.png); }
+[zoom=15]{ point-file: url(png/money_bank2.glow.12.png); }
+[zoom=16]{ point-file: url(png/money_bank2.glow.16.png); }
+[zoom=17]{ point-file: url(png/money_bank2.glow.20.png); }
+[zoom=18]{ point-file: url(png/money_bank2.glow.24.png); }
     }
 [type='courthouse']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/amenity_court.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/amenity_court.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_court.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_court.glow.24.png); }
+[zoom=15]{ point-file: url(png/amenity_court.glow.12.png); }
+[zoom=16]{ point-file: url(png/amenity_court.glow.16.png); }
+[zoom=17]{ point-file: url(png/amenity_court.glow.20.png); }
+[zoom=18]{ point-file: url(png/amenity_court.glow.24.png); }
     }
 [type='place_of_worship']#amenity{
   [religion='jewish']{
-[zoom=15]{ point-file: url(/home/planner/png/place_of_worship_jewish.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/place_of_worship_jewish.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/place_of_worship_jewish.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/place_of_worship_jewish.glow.24.png); }
+[zoom=15]{ point-file: url(png/place_of_worship_jewish.glow.12.png); }
+[zoom=16]{ point-file: url(png/place_of_worship_jewish.glow.16.png); }
+[zoom=17]{ point-file: url(png/place_of_worship_jewish.glow.20.png); }
+[zoom=18]{ point-file: url(png/place_of_worship_jewish.glow.24.png); }
     }
   [religion='christian']{
-[zoom=15]{ point-file: url(/home/planner/png/place_of_worship_christian.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/place_of_worship_christian.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/place_of_worship_christian.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/place_of_worship_christian.glow.24.png); }
+[zoom=15]{ point-file: url(png/place_of_worship_christian.glow.12.png); }
+[zoom=16]{ point-file: url(png/place_of_worship_christian.glow.16.png); }
+[zoom=17]{ point-file: url(png/place_of_worship_christian.glow.20.png); }
+[zoom=18]{ point-file: url(png/place_of_worship_christian.glow.24.png); }
     }
 }
 [type='post_office']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/amenity_post_office.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/amenity_post_office.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_post_office.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_post_office.glow.24.png); }
+[zoom=15]{ point-file: url(png/amenity_post_office.glow.12.png); }
+[zoom=16]{ point-file: url(png/amenity_post_office.glow.16.png); }
+[zoom=17]{ point-file: url(png/amenity_post_office.glow.20.png); }
+[zoom=18]{ point-file: url(png/amenity_post_office.glow.24.png); }
     }
 [type='public_building']#amenity{
-[zoom=15]{ point-file: url(/home/planner/png/amenity_public_building2.glow.12.png); }
-[zoom=16]{ point-file: url(/home/planner/png/amenity_public_building2.glow.16.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_public_building2.glow.20.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_public_building2.glow.24.png); }
+[zoom=15]{ point-file: url(png/amenity_public_building2.glow.12.png); }
+[zoom=16]{ point-file: url(png/amenity_public_building2.glow.16.png); }
+[zoom=17]{ point-file: url(png/amenity_public_building2.glow.20.png); }
+[zoom=18]{ point-file: url(png/amenity_public_building2.glow.24.png); }
     }
 [type='post_box']#amenity{
-[zoom=16]{ point-file: url(/home/planner/png/amenity_post_box.glow.12.png); }
-[zoom=17]{ point-file: url(/home/planner/png/amenity_post_box.glow.16.png); }
-[zoom=18]{ point-file: url(/home/planner/png/amenity_post_box.glow.20.png); }
+[zoom=16]{ point-file: url(png/amenity_post_box.glow.12.png); }
+[zoom=17]{ point-file: url(png/amenity_post_box.glow.16.png); }
+[zoom=18]{ point-file: url(png/amenity_post_box.glow.20.png); }
  }
 [STATUS='OPEN']#rest{
-[zoom=14]{ point-file: url(/home/planner/png/transport_rest.glow.12.png); }
-[zoom=15]{ point-file: url(/home/planner/png/transport_rest.glow.16.png); }
-[zoom=16]{ point-file: url(/home/planner/png/transport_rest.glow.20.png); }
-[zoom=17]{ point-file: url(/home/planner/png/transport_rest.glow.24.png);}
-  [zoom=18]{ point-file: url(/home/planner/png/transport_rest.glow.32.png);}
+[zoom=14]{ point-file: url(png/transport_rest.glow.12.png); }
+[zoom=15]{ point-file: url(png/transport_rest.glow.16.png); }
+[zoom=16]{ point-file: url(png/transport_rest.glow.20.png); }
+[zoom=17]{ point-file: url(png/transport_rest.glow.24.png);}
+  [zoom=18]{ point-file: url(png/transport_rest.glow.32.png);}
     }
 /* Health 
 .amenity[zoom>=16][amenity='baby_hatch'] {  }

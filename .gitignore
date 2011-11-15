@@ -1,4 +1,5 @@
-configure.py
 osm-bright/layers/*
-*.mml
+osm-bright/data/*
+osm-bright/png/*
+
 

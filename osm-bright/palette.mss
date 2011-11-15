@@ -34,7 +34,7 @@
 
 @agriculture:       #f4f0e0;
 @beach:             #ffeec7;
-@building:          #e4e0e0;
+@building:          #CDC6C6;
 @cemetery:          #d1d1d1;
 @forest:            #c7e6a8;
 @grass:             lighten(@forest,5);

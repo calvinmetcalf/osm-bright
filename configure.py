@@ -26,8 +26,8 @@ config["postgis"]["extent"] = "-20037508.34 -20037508.34 20037508.34 20037508.34
 # infrequently. The latest versions can be downloaded from osm.org:
 # - http://tile.openstreetmap.org/processed_p.tar.bz2
 # - http://tile.openstreetmap.org/shoreline_300.tar.bz2
-processed_p = "/home/planner/processed_p.shp"
-shoreline_300 = "/home/planner/shoreline_300.shp"
+processed_p = "/path/to/processed_p.shp"
+shoreline_300 = "/path/to/shoreline_300.shp"
 
 ################################################################################
 
