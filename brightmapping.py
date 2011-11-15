@@ -365,6 +365,8 @@ amenities = Points(
     name='amenities',
     fields = (
         ('park_ride', String()),
+        ('religion', String()),
+        ('denomination', String()),
     ),
     mapping = {
         'amenity': (
@@ -389,6 +391,14 @@ amenities = Points(
             'car_wash',
             'ferry_terminal',
             'grit_bin',
+            'taxi',
+            'atm',
+            'bank',
+            'courthouse',
+            'place_of_worship',
+            'post_office',
+            'public_building',
+            'post_box',
         ),
 })
 

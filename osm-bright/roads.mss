@@ -155,7 +155,7 @@
    3px line is `line-width: 3+2;`.) */
 
 /* ---- Zoom level 5 ---------------------------------------------- */
-#moterway[zoom=7] {
+#moterway[zoom=5] {
 
     ::line { line-width: 0.3;
   line-color:@motorway_line; }
@@ -195,7 +195,7 @@
     ::line { line-width: 0.6;
   line-color:@primary_line;}
   }
-  #moterway[zoom=8] {
+ #moterway[zoom=8] {
     ::line { line-width: 0.8;
   line-color:@motorway_line;}
   }
@@ -205,6 +205,10 @@
 #secondary[zoom=9] {
     ::line { line-width: 0.5;
   line-color:@secondary_line;}
+  }
+#ComLine[zoom=9] {
+    ::line { line-width: 0.8;
+  line-color:@rail_line;}
   }
   #primary[zoom=9] {
     ::line { line-width: 0.8;
@@ -221,11 +225,15 @@
     ::line { line-width: 0.7;
   line-color:@secondary_line;}
   }
+#ComLine[zoom=10] {
+    ::line { line-width: 1;
+  line-color:@rail_line;}
+  }
   #primary[zoom=10] {
     ::line { line-width: 1;
   line-color:@primary_line;}
   }
-  #moterway[zoom=10] {
+ #moterway[zoom=10] {
     ::line { line-width: 1.2;
   line-color:@motorway_line;}
   }
@@ -233,21 +241,37 @@
 
 /* ---- Zoom level 11 --------------------------------------------- */
 /* Note that from zoom 11+ we are using full-resolution roads */
-#tertiary[zoom=11]
+[Functional>4]#roads[zoom=11]
 {
  
     ::line { line-width: 0.25;
     line-color:@standard_line;}
   }
-  #secondary[zoom=11] {
+  [Functional=3]#roads[zoom=11] {
     ::line { line-width: 0.9;
     line-color:@secondary_line;}
   }
-  #primary[zoom=11] {
+#subway[zoom=11]
+{ ::line { line-width: 1.2;
+  [LINE='RED']
+    {line-color:@red_line;}
+  [LINE='GREEN']
+    {line-color:@green_line;}
+  [LINE='BLUE']
+    {line-color:@blue_line;}
+  [LINE='ORANGE']
+    {line-color:@orange_line;}
+   }
+}
+ #ComLine[zoom=11] {
+    ::line { line-width: 1.2;
+    line-color:@rail_line;}
+  }
+  [Functional=2]#roads[zoom=11] {
     ::line { line-width: 1.2;
     line-color:@primary_line;}
   }
- #moterway[zoom=11]{
+ [Functional=1]#roads[zoom=11]{
     ::case { line-width: 1+1.8;
     line-color:@motorway_case;}
   
@@ -258,23 +282,39 @@
 
 
 /* ---- Zoom level 12 --------------------------------------------- */
-#tertiary[zoom=12]{
+[Functional>4]#roads[zoom=12]{
     ::line { line-width: 0.5;
     line-color:@standard_line;}
   }
-#residential[zoom=12] {
+[Functional=0]#roads[zoom=12] {
     ::line { line-width: 0.5;
     line-color:@standard_line;}
   }
-  #secondary[zoom=12]{
+  [Functional=3]#roads[zoom=12]{
     ::line { line-width: 1;
     line-color:@secondary_line;}
   }
-  #primary[zoom=12] {
+#subway[zoom=12]
+{ ::line { line-width: 1.4;
+  [LINE='RED']
+    {line-color:@red_line;}
+  [LINE='GREEN']
+    {line-color:@green_line;}
+  [LINE='BLUE']
+    {line-color:@blue_line;}
+  [LINE='ORANGE']
+    {line-color:@orange_line;}
+  }
+   }
+#ComLine[zoom=12] {
+    ::line { line-width: 1.4;
+    line-color:@rail_line;}
+  }
+  [Functional=2]#roads[zoom=12] {
     ::line { line-width: 1.4;
     line-color:@primary_line;}
   }
-  #moterway[zoom=12] {
+  [Functional=1]#roads[zoom=12] {
     ::case { line-width: 1.2+1.8;
     line-color:@motorway_case;}
     ::fill { line-width: 1.2;
@@ -284,26 +324,53 @@
 
 /* ---- Zoom level 13 --------------------------------------------- */
 
-  #tertiary[zoom=13],
-#residential[zoom=13]{
+  [Functional>4]#roads[zoom=13],
+[Functional=0]#roads[zoom=13]{
     ::line { line-width: 1;
     line-color:@standard_line;}
   }
-  #secondary[zoom=13]{
+  [Functional=3]#roads[zoom=13]{
     ::case { line-width: 1.2+2;
     line-color:@secondary_case;}
     ::fill { line-width: 1.2;
     line-color:@secondary_fill;}
   }
-
+#subway[zoom=13]
+{ ::case { line-width: 1.4+2;
+  [LINE='RED']
+    {line-color:@red_case;}
+  [LINE='GREEN']
+    {line-color:@green_case;}
+  [LINE='BLUE']
+    {line-color:@blue_case;}
+  [LINE='ORANGE']
+    {line-color:@orange_case;}
+  }
+  ::file { line-width: 1.4;
+  [LINE='RED']
+    {line-color:@red_fill;}
+  [LINE='GREEN']
+    {line-color:@green_fill;}
+  [LINE='BLUE']
+    {line-color:@blue_fill;}
+  [LINE='ORANGE']
+    {line-color:@orange_fill;}
+  }
+   }
+#ComLine[zoom=13]{
+    ::case { line-width: 1.4+2;
+    line-color:@rail_case; }
+    ::fill { line-width: 1.4;
+    line-color:@rail_fill;}
+  }
   
-  #primary[zoom=13]{
+  [Functional=2]#roads[zoom=13]{
     ::case { line-width: 1.4+2;
     line-color:@primary_case; }
     ::fill { line-width: 1.4;
     line-color:@primary_fill;}
   }
-  #moterway[zoom=13]{
+ [Functional=1]#roads[zoom=13]{
     ::case { line-width: 2+2;
     line-color:@motorway_case;}
     ::fill { line-width: 2;
@@ -312,27 +379,85 @@
 
 
 /* ---- Zoom level 14 --------------------------------------------- */
+[zoom=15]#bike[type='On-road marked lane']{
+ ::case { line-width:2+1.5;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#c00;
+  }
+  }
+[zoom=15]#bike[type='On-road divided lane']{
+ ::case { line-width:2+1.5;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=14]#bike[type='Off-road shared use path']{
+ ::case { line-width:2+1.5;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:4,2;
+  line-color:#0025E0;
+  }
+  }
 
-  #tertiary[zoom=14],
-#residential[zoom=14]{
+  [Functional>4]#roads[zoom=14],
+[Functional=0]#roads[zoom=14]{
     ::case { line-width: 2+1.5;
     line-color:@standard_case;}
     ::fill { line-width: 2;
     line-color:@standard_fill;}
   }
-  #secondary[zoom=14]{
+  [Functional=3]#roads[zoom=14]{
     ::case { line-width: 2.6+2;
     line-color:@secondary_case;}
     ::fill { line-width: 2.6;
     line-color:@secondary_fill;}
   }
-  #primary[zoom=14] {
+#subway[zoom=14]
+{ ::case { line-width: 3+2;
+  [LINE='RED']
+    {line-color:@red_case;}
+  [LINE='GREEN']
+    {line-color:@green_case;}
+  [LINE='BLUE']
+    {line-color:@blue_case;}
+  [LINE='ORANGE']
+    {line-color:@orange_case;}
+  }
+  ::file { line-width: 3;
+  [LINE='RED']
+    {line-color:@red_fill;}
+  [LINE='GREEN']
+    {line-color:@green_fill;}
+  [LINE='BLUE']
+    {line-color:@blue_fill;}
+  [LINE='ORANGE']
+    {line-color:@orange_fill;}
+  }
+   }
+#ComLine[zoom=14] {
+    ::case { line-width: 3+2;
+    line-color:@rail_case; }
+    ::fill { line-width: 3;
+    line-color:@rail_fill;}
+  }
+  [Functional=2]#roads[zoom=14] {
     ::case { line-width: 3+2;
     line-color:@primary_case; }
     ::fill { line-width: 3;
     line-color:@primary_fill;}
   }
-  #moterway[zoom=14]{
+  [Functional=1]#roads[zoom=14]{
     ::case { line-width: 3+2;
     line-color:@motorway_case;}
     ::fill { line-width: 3;
@@ -342,27 +467,115 @@
 
 
 /* ---- Zoom level 15 --------------------------------------------- */
+[zoom=16]#bike[type='Off-road minimally improved path']{
+ ::case { line-width:2+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:2;
+  line-dasharray:4,2;
+  line-color:#00E04B;
+  }
+  }
 
-  #tertiary[zoom=15],
-#residential[zoom=15] {
+[zoom=16]#bike[type='On-road marked shared lane']{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=16]#bike[type='On-road sign-posted bike route']{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=16]#bike[type='On-road marked lane']{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#c00;
+  }
+  }
+[zoom=16]#bike[type='On-road divided lane']{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=15]#bike[type='Off-road shared use path']{
+ ::case { line-width:2+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:4,2;
+  line-color:#0025E0;
+  }
+  }
+  [Functional>4]#roads[zoom=15],
+[Functional=0]#roads[zoom=15] {
     ::case { line-width:2+2;
     line-color:@standard_case;}
     ::fill { line-width:2;
     line-color:@standard_fill;}
   }
-  #secondary[zoom=15]{
+  [Functional=3]#roads[zoom=15]{
     ::case { line-width:4+2;
     line-color:@secondary_case;}
     ::fill { line-width:4;
     line-color:@secondary_fill;}
   }
-  #primary[zoom=15]{
+#subway[zoom=15]
+{ ::case { line-width: 5+2;
+  [LINE='RED']
+    {line-color:@red_case;}
+  [LINE='GREEN']
+    {line-color:@green_case;}
+  [LINE='BLUE']
+    {line-color:@blue_case;}
+  [LINE='ORANGE']
+    {line-color:@orange_case;}
+  }
+  ::file { line-width: 5;
+  [LINE='RED']
+    {line-color:@red_fill;}
+  [LINE='GREEN']
+    {line-color:@green_fill;}
+  [LINE='BLUE']
+    {line-color:@blue_fill;}
+  [LINE='ORANGE']
+    {line-color:@orange_fill;}
+  }
+   }
+#ComLine[zoom=15]{
+    ::case { line-width:5+2;
+    line-color:@rail_case; }
+    ::fill { line-width:5;
+    line-color:@rail_fill;}
+  }
+  [Functional=2]#roads[zoom=15]{
     ::case { line-width:5+2;
     line-color:@primary_case; }
     ::fill { line-width:5;
     line-color:@primary_fill;}
   }
-  #moterway[zoom=15]{
+  [Functional=1]#roads[zoom=15]{
     ::case { line-width:6+2;
     line-color:@motorway_case;}
     ::fill { line-width:6;
@@ -371,27 +584,114 @@
 
 
 /* ---- Zoom level 16 --------------------------------------------- */
-
-  #tertiary[zoom=16],
-#residential[zoom=16] {
+[zoom=17]#bike[type='Off-road minimally improved path']{
+ ::case { line-width:4+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:4;
+  line-dasharray:4,2;
+  line-color:#00E04B;
+  }
+  }
+[zoom=17]#bike[type='On-road marked shared lane']{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=17]#bike[type='On-road sign-posted bike route']{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=17]#bike[type='On-road marked lane']{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#c00;
+  }
+  }
+[zoom=17]#bike[type='On-road divided lane']{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=16]#bike[type='Off-road shared use path']{
+ ::case { line-width:4+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:4,2;
+  line-color:#0025E0;
+  }
+  }
+  [Functional>4]#roads[zoom=16],
+[Functional=0]#roads[zoom=16] {
     ::case { line-width:4+2;
     line-color:@standard_case;}
     ::fill { line-width:4;
     line-color:@standard_fill;}
   }
-  #secondary[zoom=16]{
+  [Functional=3]#roads[zoom=16]{
     ::case { line-width: 6+2.5;
     line-color:@secondary_case;}
     ::fill { line-width: 6;
     line-color:@secondary_fill;}
   }
-  #primary[zoom=16]{
+#subway[zoom=16]
+{ ::case { line-width: 7+2.5;
+  [LINE='RED']
+    {line-color:@red_case;}
+  [LINE='GREEN']
+    {line-color:@green_case;}
+  [LINE='BLUE']
+    {line-color:@blue_case;}
+  [LINE='ORANGE']
+    {line-color:@orange_case;}
+  }
+  ::file { line-width: 7;
+  [LINE='RED']
+    {line-color:@red_fill;}
+  [LINE='GREEN']
+    {line-color:@green_fill;}
+  [LINE='BLUE']
+    {line-color:@blue_fill;}
+  [LINE='ORANGE']
+    {line-color:@orange_fill;}
+  }
+   }
+#ComLine[zoom=16]{
+    ::case { line-width: 7+2.5;
+    line-color:@rail_case; }
+    ::fill { line-width: 7;
+    line-color:@rail_fill;}
+  }
+  [Functional=2]#roads[zoom=16]{
     ::case { line-width: 7+2.5;
     line-color:@primary_case; }
     ::fill { line-width: 7;
     line-color:@primary_fill;}
   }
-  #moterway[zoom=16]{
+ [Functional=1]#roads[zoom=16]{
     ::case { line-width: 8+2.5;
     line-color:@motorway_case;}
     ::fill { line-width: 8;
@@ -400,27 +700,115 @@
 
 
 /* ---- Zoom level 17 --------------------------------------------- */
+[zoom=18]#bike[type='Off-road minimally improved path']{
+ ::case { line-width:8+3;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:8;
+  line-dasharray:4,2;
+  line-color:#00E04B;
+  }
+  }
+[zoom=18]#bike[type='On-road marked shared lane']{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=18]#bike[type='On-road sign-posted bike route']{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
 
-  #tertiary[zoom=17],
-#residential[zoom=17] {
+[zoom=18]#bike[type='On-road marked lane']{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#c00;
+  }
+  }
+[zoom=18]#bike[type='On-road divided lane']{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=17]#bike[type='Off-road shared use path']{
+ ::case { line-width:8+3;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:4,2;
+  line-color:#0025E0;
+  }
+  }
+  [Functional>4]#roads[zoom=17],
+[Functional=0]#roads[zoom=17] {
     ::case { line-width:8+3;
     line-color:@standard_case;}
     ::fill { line-width:8;
     line-color:@standard_fill;}
   }
-  #secondary[zoom=17] {
+  [Functional=3]#roads[zoom=17] {
     ::case { line-width: 8+3;
     line-color:@secondary_case;}
     ::fill { line-width: 8;
     line-color:@secondary_fill;}
   }
-  #primary[zoom=17] {
+  [Functional=2]#roads[zoom=17] {
     ::case { line-width: 9+3;
     line-color:@primary_case;}
     ::fill { line-width: 9;
     line-color:@primary_fill;}
   }
-#moterway[zoom=17]{
+#subway[zoom=17]
+{ ::case { line-width: 9+3;
+  [LINE='RED']
+    {line-color:@red_case;}
+  [LINE='GREEN']
+    {line-color:@green_case;}
+  [LINE='BLUE']
+    {line-color:@blue_case;}
+  [LINE='ORANGE']
+    {line-color:@orange_case;}
+  }
+  ::file { line-width: 9;
+  [LINE='RED']
+    {line-color:@red_fill;}
+  [LINE='GREEN']
+    {line-color:@green_fill;}
+  [LINE='BLUE']
+    {line-color:@blue_fill;}
+  [LINE='ORANGE']
+    {line-color:@orange_fill;}
+  }
+   }
+#ComLine[zoom=17] {
+    ::case { line-width: 9+3;
+    line-color:@rail_case;}
+    ::fill { line-width: 9;
+    line-color:@rail_fill;}
+  }
+[Functional=1]#roads[zoom=17]{
     ::case { line-width: 10+3;
     line-color:@motorway_case;}
     ::fill { line-width: 10;
@@ -429,27 +817,64 @@
 
 
 /* ---- Zoom level 18 --------------------------------------------- */
-
-  #tertiary[zoom=18], 
-  #residential[zoom=18]{
+[zoom=18]#bike[type='Off-road shared use path']{
+ ::case { line-width:10+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:10;
+  line-dasharray:4,2;
+  line-color:#0025E0;
+  }
+  }
+  [Functional>4]#roads[zoom=18], 
+  [Functional=0]#roads[zoom=18]{
     ::case { line-width:10+2;
     line-color:@standard_case;}
     ::fill { line-width:10;
     line-color:@standard_fill;}
   }
-  #secondary[zoom=18] {
+  [Functional=3]#roads[zoom=18] {
     ::case { line-width: 16+3;
     line-color:@secondary_case;}
     ::fill { line-width: 16;
     line-color:@secondary_fill;}
   }
-  #primary[zoom=18] {
+#subway[zoom=18]
+{ ::case { line-width: 18+3;
+  [LINE='RED']
+    {line-color:@red_case;}
+  [LINE='GREEN']
+    {line-color:@green_case;}
+  [LINE='BLUE']
+    {line-color:@blue_case;}
+  [LINE='ORANGE']
+    {line-color:@orange_case;}
+  }
+  ::file { line-width: 18;
+  [LINE='RED']
+    {line-color:@red_fill;}
+  [LINE='GREEN']
+    {line-color:@green_fill;}
+  [LINE='BLUE']
+    {line-color:@blue_fill;}
+  [LINE='ORANGE']
+    {line-color:@orange_fill;}
+  }
+   }
+#ComLine[zoom=18] {
+    ::case { line-width: 18+3;
+    line-color:@rail_case;}
+    ::fill { line-width: 18;
+    line-color:@rail_fill;}
+  }
+  [Functional=2]#roads[zoom=18] {
     ::case { line-width: 18+3;
     line-color:@primary_case;}
     ::fill { line-width: 18;
     line-color:@primary_fill;}
   }
-  #moterway[zoom=18]{
+[Functional=1]#roads[zoom=18]{
     ::case { line-width: 20+3;
     line-color:@motorway_case;}
     ::fill { line-width: 20;
@@ -458,7 +883,7 @@
 
 
 /* == 3. ROAD LABELS ============================================== */
-[zoom>7]#is[RouteSyste='I']
+[zoom>7]#shield[RouteSyste='I']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -469,7 +894,9 @@
   shield-spacing:50;
   }
 
-[zoom>9]#p[RouteSyste='US']
+[zoom>9]#shield[Functional=2]
+{
+[RouteSyste='US']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -479,7 +906,7 @@
   shield-min-distance:30;
   shield-spacing:50;
   }
-[zoom>9]#p[RouteSyste='SR']
+[RouteSyste='SR']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -489,8 +916,9 @@
   shield-min-distance:50;
   shield-spacing:70;
   }
-
-[zoom>10]#s[RouteSyste='US']
+}
+[zoom>10]#shield[Functional=2]{
+[RouteSyste='US']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -500,7 +928,7 @@
   shield-min-distance:50;
   shield-spacing:70;
   }
-[zoom>10]#s[RouteSyste='SR']
+[RouteSyste='SR']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -510,7 +938,9 @@
   shield-min-distance:50;
   shield-spacing:70;
   }
-[zoom>13]#t[RouteSyste='US']
+}
+[zoom>13]#shield[Functional>3]{
+[RouteSyste='US']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -520,7 +950,7 @@
   shield-min-distance:50;
   shield-spacing:70;
   }
-[zoom>13]#t[RouteSyste='SR']
+[RouteSyste='SR']
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:'Ubuntu Regular';
@@ -530,7 +960,8 @@
   shield-min-distance:50;
   shield-spacing:70;
   }
-#residential[zoom>14] {
+}
+[Functional=0]#shield[zoom>14] {
   text-name:'[StreetName]';
   text-face-name:'Ubuntu Regular';
   text-placement:line;
@@ -598,52 +1029,12 @@ line-width:2;
 [zoom=17]{ point-file: url(/home/planner/png/transport_bus_stop.glow.16.png); }
 [zoom=18]{ point-file: url(/home/planner/png/transport_bus_stop.glow.20.png); }
     }
+#ComSt{
+[zoom=15]{ point-file: url(/home/planner/png/transport_train_station.glow.12.png); }
+[zoom=16]{ point-file: url(/home/planner/png/transport_train_station.glow.16.png); }
+[zoom=17]{ point-file: url(/home/planner/png/transport_train_station.glow.20.png); }
+[zoom=18]{ point-file: url(/home/planner/png/transport_train_station.glow.24.png); }
+    }
 
-#subway[zoom>10]
-{
-  line-width:3;
-  [LINE='RED']
-    {line-color:#f00;}
-  [LINE='GREEN']
-    {line-color:#060;}
-  [LINE='BLUE']
-    {line-color:#00f;}
-  [LINE='ORANGE']
-    {line-color:#FF6314;}
-   }
-[zoom>14]#bike[type='On-road marked lane']
-{line-width:2;
-  line-dasharray:8,4;
-  line-color:#c00;
-  line-opacity:.6;
-  }
-[zoom>14]#bike[type='On-road divided lane']
-{line-width:2;
-  line-dasharray:8,4;
-  line-color:#E04B00;
-  line-opacity:.6;
-  }
-[zoom>15]#bike[type='On-road marked shared lane']
-{line-width:1.5;
-  line-dasharray:8,4;
-  line-color:#360;
-  line-opacity:.6;
-  }
-[zoom>15]#bike[type='On-road sign-posted bike route']
-{line-width:1.5;
-  line-dasharray:8,4;
-  line-color:#360;
-  line-opacity:.6;
-  }
-[zoom>13]#bike[type='Off-road shared use path']
-{line-width:2.5;
-  line-dasharray:4,2;
-  line-color:#0025E0;
-  line-opacity:.6;
-  }
-[zoom>15]#bike[type='Off-road minimally improved path']
-{line-width:1.5;
-  line-dasharray:4,2;
-  line-color:#00E04B;
-  line-opacity:.6;
-  }
+
+

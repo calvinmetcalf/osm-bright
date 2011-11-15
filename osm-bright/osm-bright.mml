@@ -6,20 +6,22 @@
     43
   ],
   "center": [
-    -71.06496715545624,
-    42.350763842433956,
-    18
+    -71.32070505619008,
+    42.287609537782465,
+    10
   ],
   "format": "png",
   "interactivity": {
-    "layer": "moterway",
-    "template_teaser": "[RouteSyste][RouteNumbe] also known as [StreetName]",
-    "template_full": "",
+    "layer": "roads",
+    "template_teaser": "[StreetName] also known as [RouteSyste] [RouteNumbe] which is functionally classified as a [Functional] with jurisdiction of [Jurisdicti]",
+    "template_full": "[StreetName] also known as [RouteSyste] [RouteNumbe] which is functionally classified as a [Functional] with jurisdiction of [Jurisdicti]",
     "template_location": "",
     "fields": [
+      "StreetName",
       "RouteSyste",
       "RouteNumbe",
-      "StreetName"
+      "Functional",
+      "Jurisdicti"
     ]
   },
   "minzoom": 0,
@@ -645,26 +647,6 @@
     },
     {
       "geometry": "linestring",
-      "name": "residential",
-      "id": "residential",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/home/planner/road1027/residential.shp"
-      }
-    },
-    {
-      "geometry": "linestring",
-      "name": "tertiary",
-      "id": "tertiary",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/home/planner/road1027/tertiary.shp"
-      }
-    },
-    {
-      "geometry": "linestring",
       "name": "secondary",
       "id": "secondary",
       "srs": "",
@@ -694,6 +676,29 @@
         "id": "moterway",
         "project": "osm-bright",
         "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "roads",
+      "id": "roads",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road.geojson",
+        "id": "roads",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "ComLine",
+      "id": "ComLine",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/trainrt.shp"
       }
     },
     {
@@ -733,6 +738,16 @@
         "id": "stop",
         "project": "osm-bright",
         "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "ComSt",
+      "id": "ComSt",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/trainst.shp"
       }
     },
     {
@@ -781,56 +796,13 @@
       "status": "on"
     },
     {
-      "geometry": "linestring",
-      "name": "is",
-      "id": "is",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/home/planner/road1027/moterway.shp",
-        "id": "is",
-        "project": "osm-bright",
-        "srs": null
-      }
-    },
-    {
-      "geometry": "linestring",
-      "name": "p",
-      "id": "p",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/home/planner/road1027/primary.shp"
-      }
-    },
-    {
-      "geometry": "linestring",
-      "name": "s",
-      "id": "s",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/home/planner/road1027/secondary.shp"
-      }
-    },
-    {
-      "geometry": "linestring",
-      "name": "t",
-      "id": "t",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/home/planner/road1027/tertiary.shp"
-      }
-    },
-    {
       "geometry": "point",
       "name": "amenity",
       "id": "amenity",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "class": "",
       "Datasource": {
-        "table": "(select geometry, type, park_ride from osm_amenities) as amenity",
+        "table": "(select geometry, type, park_ride, religion, denomination from osm_amenities) as amenity",
         "key_field": "",
         "geometry_field": "geometry",
         "extent": "",
@@ -843,6 +815,42 @@
         "id": "amenity",
         "project": "osm-bright",
         "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "rest",
+      "id": "rest",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/restareas.geojson",
+        "id": "rest",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "fuel",
+      "id": "fuel",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/fuel.geojson",
+        "id": "fuel",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "shield",
+      "id": "shield",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/home/planner/road.geojson"
       }
     }
   ],

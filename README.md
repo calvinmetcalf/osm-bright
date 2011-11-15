@@ -9,7 +9,7 @@ The style is still a work in progress and you are encouraged to use the
 [issue tracker][] to note missing features or problems with the current
 implementation. 
 
-This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS
+This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS.   This update has some fairly massive changes first off for the icons your going to need to grab my fork of the [open svg map icon set](https://github.com/calvinmetcalf/Open-SVG-Map-Icons) your also going to need a copy of the [road inventory shapefile](http://www.eot.state.ma.us/default.asp?pgid=content/plan02&sid=about) and to first convert it to wgs84 and then filter it by functional class (you'll need files for functional classes 1, 2, and 3) and you will also need to make a second copy in geojson format. you'll also need to grab the train layers from mass gis, the depot and bike stuff arn't availible online at the moment so you'll need to comment that out, same with the t icon.
 
 [Carto]: http://github.com/mapbox/carto/
 [TileMill]: http://tilemill.com/
@@ -49,7 +49,7 @@ also [the OSM wiki][2] for information about (very large) full-planet
 downloads.
 
 OSM Bright requires a PostGIS database imported with [ImpOSM][]. Support for
-OSM2PGSQL is planned but not yet implemented.
+OSM2PGSQL is planned but not yet implemented. 
 
 
 ### Install imposm

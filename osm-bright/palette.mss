@@ -85,9 +85,25 @@
 
 @track:             #aaa;
 
-@rail_line:         #999;
-@rail_fill:         #fff;
-@rail_case:         #999;
+@rail_line:         #8F22B7;
+@rail_fill:        lighten(@rail_line,10%);
+@rail_case:        darken(@rail_line,20%);
+
+@red_line:        #f00;
+@red_fill:        lighten(@red_line,10%);
+@red_case:        darken(@red_line,20%);
+
+@green_line:        #060;
+@green_fill:        lighten(@green_line,10%);
+@green_case:        darken(@green_line,20%);
+
+@blue_line:        #00f;
+@blue_fill:        lighten(@blue_line,10%);
+@blue_case:        darken(@blue_line,20%);
+
+@orange_line:        #FF6314;
+@orange_fill:        lighten(@orange_line,10%);
+@orange_case:        darken(@orange_line,20%);
 
 @aeroway:           rgb(180,180,180);
 
