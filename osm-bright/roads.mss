@@ -678,7 +678,7 @@
 [zoom>7]#ms[RouteSyste='I']
 {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/inter.png);
   shield-fill:#fff;
   shield-size:12;
@@ -693,7 +693,7 @@
       [three=0]
       {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
   shield-fill:#000;
   shield-size:12;
   shield-min-distance:30;
@@ -703,7 +703,7 @@
     [three=1]
       {
      shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
   shield-fill:#000;
   shield-size:12;
   shield-min-distance:30;
@@ -715,7 +715,7 @@
   [three=0]
 {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/ma.png);
   shield-fill:#000;
   shield-size:12;
@@ -725,7 +725,7 @@
   [three=1]
   {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/maw.png);
   shield-fill:#000;
   shield-size:12;
@@ -740,7 +740,7 @@
       [three=0]
       {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
   shield-fill:#000;
   shield-size:12;
   shield-min-distance:30;
@@ -750,7 +750,7 @@
     [three=1]
       {
      shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
   shield-fill:#000;
   shield-size:12;
   shield-min-distance:30;
@@ -762,7 +762,7 @@
   [three=0]
 {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/ma.png);
   shield-fill:#000;
   shield-size:12;
@@ -772,7 +772,7 @@
   [three=1]
   {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/maw.png);
   shield-fill:#000;
   shield-size:12;
@@ -788,7 +788,7 @@
       [three=0]
       {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
   shield-fill:#000;
   shield-size:12;
   shield-min-distance:30;
@@ -798,7 +798,7 @@
     [three=1]
       {
      shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
   shield-fill:#000;
   shield-size:12;
   shield-min-distance:30;
@@ -810,7 +810,7 @@
   [three=0]
 {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/ma.png);
   shield-fill:#000;
   shield-size:12;
@@ -820,7 +820,7 @@
   [three=1]
   {
   shield-name:'[RouteNumbe]';
-  shield-face-name:'Ubuntu Regular';
+  shield-face-name:@sans;
    shield-file:url(res/maw.png);
   shield-fill:#000;
   shield-size:12;
@@ -831,7 +831,7 @@
 }
 #ls[zoom>14] {
   text-name:'[StreetName]';
-  text-face-name:'Ubuntu Regular';
+  text-face-name:@sans;
   text-placement:line;
   text-size:9;
   text-fill:#444;

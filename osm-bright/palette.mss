@@ -16,7 +16,7 @@
 /* == 1. FONTS ====================================================== */
 
 /* We're only using @sans so far. TODO: more type variety. */
-@sans:              "Arial Regular","DejaVu Sans Book";
+@sans:              "Ubuntu Regular","Arial Regular","DejaVu Sans Book";
 @sans_bold:         "Arial Bold", "DejaVu Sans Bold";
 @sans_italic:       "Arial Italic", "DejaVu Sans Oblique";
 @sans_bold_italic:  "Arial Bold Italic", " DejaVu Sans Bold Oblique";
