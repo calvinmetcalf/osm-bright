@@ -21,30 +21,30 @@
 #landuse_gen0[zoom>3][zoom<=9],
 #landuse_gen1[zoom>9][zoom<=12],
 #landuse[zoom>12] {
-  [type='cemetery']          { polygon-fill: @cemetery; }
-  [type='college']           { polygon-fill: @school; }
-  [type='commercial']        { polygon-fill: @industrial; }
-  [type='forest']            { polygon-fill: @forest; }
-  [type='golf_course']       { polygon-fill: @park; }
-  [type='hospital']          { polygon-fill: @hospital; }
-  [type='industrial']        { polygon-fill: @industrial; }
+  [type='cemetery'] { polygon-fill: @cemetery; }
+  [type='college'] { polygon-fill: @school; }
+  [type='commercial'] { polygon-fill: @industrial; }
+  [type='forest'] { polygon-fill: @forest; }
+  [type='golf_course'] { polygon-fill: @park; }
+  [type='hospital'] { polygon-fill: @hospital; }
+  [type='industrial'] { polygon-fill: @industrial; }
   [type='nature_reserve'] { polygon-fill: @park; }
-  [type='park']              { polygon-fill: @park; }
-  [type='parking']           { polygon-fill: @parking; }
-  [type='pedestrian']        { polygon-fill: @pedestrian_fill; }
-  [type='pitch']             { polygon-fill: @sports; }
+  [type='park'] { polygon-fill: @park; }
+  [type='parking'] { polygon-fill: @parking; }
+  [type='pedestrian'] { polygon-fill: @pedestrian_fill; }
+  [type='pitch'] { polygon-fill: @sports; }
   [type='recreation_ground'] { polygon-fill: @park; }
-  [type='residential']       { polygon-fill: @residential; }
-  [type='school']            { polygon-fill: @school; }
-  [type='sports_center']     { polygon-fill: @sports; }
-  [type='stadium']           { polygon-fill: @sports; }
-  [type='university']        { polygon-fill: @school; }
-  [type='wood']              { polygon-fill: @forest; }
+  [type='residential'] { polygon-fill: @residential; }
+  [type='school'] { polygon-fill: @school; }
+  [type='sports_center'] { polygon-fill: @sports; }
+  [type='stadium'] { polygon-fill: @sports; }
+  [type='university'] { polygon-fill: @school; }
+  [type='wood'] { polygon-fill: @forest; }
 }
 
 #landuse_overlays[type='nature_reserve'][zoom>6] {
   line-color: darken(@forest,25%);
-  line-opacity:  0.3;
+  line-opacity: 0.3;
   line-dasharray: 1,1;
   polygon-fill: darken(@forest,25%);
   polygon-opacity: 0.1;
@@ -115,7 +115,7 @@ Map { background-color: @water; }
   [zoom>13]{
     line-cap: round;
     line-join: round;
-  } 
+  }
   [zoom=14]{ line-width: 2; }
   [zoom=15]{ line-width: 4; }
   [zoom=16]{ line-width: 8; }
@@ -208,7 +208,7 @@ Map { background-color: @water; }
 #town[zoom>8] {
   line-color:@admin_2;
   line-width:1;
-   line-opacity: 0.4; 
+   line-opacity: 0.4;
   line-dasharray:4,4;
 }
 
@@ -224,7 +224,7 @@ Map { background-color: @water; }
  #admin[admin_level<5][zoom=4] {
   line-color:@admin_2;
   line-width:1.5;
- line-opacity: 0.4; 
+ line-opacity: 0.4;
 }
 #admin[admin_level<5][zoom>4] {
   line-color:@admin_2;
@@ -233,3 +233,5 @@ Map { background-color: @water; }
 }
 
 /******************************************************************* */
+
+

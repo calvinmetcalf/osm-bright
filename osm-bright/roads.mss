@@ -2,11 +2,11 @@
  * & pedestrian ways.
  *
  * CONTENTS:
- *   1. Road Colors & Line Styles
- *   2. Road Widths
- *   3. Road Labels
- *   4. Railways
- *   5. Aeroways
+ * 1. Road Colors & Line Styles
+ * 2. Road Widths
+ * 3. Road Labels
+ * 4. Railways
+ * 5. Aeroways
  */
 
 /* == 1. ROAD COLORS & LINE STYLES ================================== */
@@ -16,7 +16,7 @@
    ::case which should be rendered below ::fill.
 
 /* ---- Bridge Setup ------------------------------------------------ */
-/* Bridges appear above roads, but complex multi-level layering 
+/* Bridges appear above roads, but complex multi-level layering
    does not work properly yet. */
 /*#bridge::case {
   [zoom>12] {
@@ -33,7 +33,7 @@
 /*
 #tertiary[zoom>=11],
 #residential[zoom>=11]
- {  
+ {
     ::line { line-color:@standard_line;
    line-cap:round;
     line-join:round;
@@ -50,9 +50,9 @@
 
 
   
-#secondary_gen1[zoom>=8][zoom<=10], 
-#secondary[zoom>=11] 
- {  
+#secondary_gen1[zoom>=8][zoom<=10],
+#secondary[zoom>=11]
+ {
     ::line { line-color:@secondary_line;
    line-cap:round;
     line-join:round;
@@ -68,14 +68,14 @@
   }
 
 #primary_gen0[zoom=7],
-#primary_gen1[zoom>=8][zoom<=10], 
-#primary[zoom>=11] 
- {  
-    ::line { line-color:@primary_line; 
+#primary_gen1[zoom>=8][zoom<=10],
+#primary[zoom>=11]
+ {
+    ::line { line-color:@primary_line;
    line-cap:round;
     line-join:round;
     }
-    ::case { line-color:@primary_case; 
+    ::case { line-color:@primary_case;
    line-cap:round;
     line-join:round;
     }
@@ -87,24 +87,24 @@
  
 
 #moterway_gen0[zoom>=5][zoom<=7],
-#moterway_gen1[zoom>=8][zoom<=10], 
-#moterway[zoom>=11] 
- {    
-    ::line { line-color:@motorway_line; 
+#moterway_gen1[zoom>=8][zoom<=10],
+#moterway[zoom>=11]
+ {
+    ::line { line-color:@motorway_line;
    line-cap:round;
     line-join:round;
    }
-    ::case { line-color:@motorway_case; 
+    ::case { line-color:@motorway_case;
    line-cap:round;
     line-join:round;
    }
-    ::fill { line-color:@motorway_fill; 
+    ::fill { line-color:@motorway_fill;
    line-cap:round;
     line-join:round;
   }
   }
 */
-/* Bridges 
+/* Bridges
 #bridge::case[zoom>=13] { line-width:0; }
 #bridge::fill[zoom>=13] {
   line-cap:round;
@@ -130,7 +130,7 @@
     line-color:@standard_fill;
   }
 }*/
-/* turning circles - note that the style perhaps unsafely assumes that 
+/* turning circles - note that the style perhaps unsafely assumes that
  * these are not on major roads, bridges, or tunnels.
  
 #turning_circle_case[zoom>=14] {
@@ -148,9 +148,9 @@
 */
 /* = 2. ROAD WIDTHS =============================================== */
 
-/* Grouped by zoom-level, then type. Order low to high priority. 
+/* Grouped by zoom-level, then type. Order low to high priority.
    The math functions used in the casing line width definitions are
-   not technically necessary, but are there to better show how much 
+   not technically necessary, but are there to better show how much
    of an outline is provided. (eg. A 1px outline on both sides of a
    3px line is `line-width: 3+2;`.) */
 
@@ -166,10 +166,10 @@
 
 
 
-/* ---- Zoom level 8 ---------------------------------------------- 
+/* ---- Zoom level 8 ----------------------------------------------
 #secondary[zoom=8] {
   
-    ::line { line-width: 0.3; 
+    ::line { line-width: 0.3;
   line-color:@secondary_line;}
   }*/
   
@@ -675,17 +675,32 @@
   
 
 /* == 3. ROAD LABELS ============================================== */
-[zoom>7]#ms[RouteSyste='I']
+#ms
+[zoom>7]
+{
+[three=0]
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/inter.png);
+   shield-file:url(res/I16.png);
   shield-fill:#fff;
-  shield-size:12;
-  shield-min-distance:30;
-  shield-spacing:50;
+  shield-size:10;
+  shield-min-distance:40;
+  shield-spacing:60;
+      shield-text-dx:1;
   }
-
+  [three=1]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/IW16.png);
+  shield-fill:#fff;
+  shield-size:10;
+  shield-min-distance:40;
+  shield-spacing:80;
+    shield-text-dx:1;
+  }
+}
 [zoom>9]#ps
 {
 [RouteSyste='US']
@@ -695,19 +710,20 @@
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:30;
   shield-spacing:50;
-  shield-file:url(res/us.png);
+  shield-file:url(res/US16.png);
   }
     [three=1]
       {
      shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;shield-file:url(res/usw.png);
+  shield-spacing:50;
+      shield-file:url(res/USW16.png);
   }
   }
 [RouteSyste='SR']
@@ -716,9 +732,9 @@
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/ma.png);
+   shield-file:url(res/MA16.png);
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:50;
   shield-spacing:70;
   }
@@ -726,9 +742,9 @@
   {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/maw.png);
+   shield-file:url(res/MAW16.png);
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:50;
   shield-spacing:70;
   }
@@ -742,19 +758,20 @@
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:30;
   shield-spacing:50;
-  shield-file:url(res/us.png);
+  shield-file:url(res/US16.png);
   }
     [three=1]
       {
      shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;shield-file:url(res/usw.png);
+  shield-spacing:50;
+      shield-file:url(res/USW16.png);
   }
   }
 [RouteSyste='SR']
@@ -763,9 +780,9 @@
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/ma.png);
+   shield-file:url(res/MA16.png);
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:50;
   shield-spacing:70;
   }
@@ -773,9 +790,9 @@
   {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/maw.png);
+   shield-file:url(res/MAW16.png);
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:50;
   shield-spacing:70;
   }
@@ -790,19 +807,20 @@
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:30;
   shield-spacing:50;
-  shield-file:url(res/us.png);
+  shield-file:url(res/US16.png);
   }
     [three=1]
       {
      shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;shield-file:url(res/usw.png);
+  shield-spacing:50;
+      shield-file:url(res/USW16.png);
   }
   }
 [RouteSyste='SR']
@@ -811,9 +829,9 @@
 {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/ma.png);
+   shield-file:url(res/MA16.png);
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:50;
   shield-spacing:70;
   }
@@ -821,9 +839,9 @@
   {
   shield-name:'[RouteNumbe]';
   shield-face-name:@sans;
-   shield-file:url(res/maw.png);
+   shield-file:url(res/MAW16.png);
   shield-fill:#000;
-  shield-size:12;
+  shield-size:10;
   shield-min-distance:50;
   shield-spacing:70;
   }
@@ -843,7 +861,7 @@
 
 /* == 4. RAILWAYS ================================================= */
 
-/* TODO: fancier railway styling with casing, thicker lines 
+/* TODO: fancier railway styling with casing, thicker lines
 #rail[zoom>7] {
   line-color:@rail_line;
   line-dasharray:3,2;
@@ -908,6 +926,46 @@ line-width:2;
 [zoom=17]{ point-file: url(png/transport_train_station.glow.20.png); }
 [zoom=18]{ point-file: url(png/transport_train_station.glow.24.png); }
     }
-
-
-
+#ped
+{
+[zoom=15]{
+ ::case { line-width:2+2;
+  line-dasharray:2,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:2,2;
+  line-color:@ped_fill;
+  }
+  }
+[zoom=16]{
+ ::case { line-width:4+2;
+  line-dasharray:2,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:2,2;
+  line-color:@ped_fill;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:8+3;
+  line-dasharray:2,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:2,2;
+  line-color:@ped_fill;
+  }
+  }
+  [zoom=18]{
+ ::case { line-width:10+2;
+  line-dasharray:2,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:10;
+  line-dasharray:2,2;
+  line-color:@ped_fill;
+  }
+  }
+}

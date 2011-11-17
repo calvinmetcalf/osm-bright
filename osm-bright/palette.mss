@@ -1,5 +1,5 @@
 /* ****************************************************************** */
-/* OSM BRIGHT for ImpOSM                                              */
+/* OSM BRIGHT for ImpOSM */
 /* ****************************************************************** */
 
 /* For basic style customization you can simply edit the colors and
@@ -8,7 +8,7 @@
  *
  * GENERAL NOTES
  *
- * There is a slight performance cost in rendering line-caps.  An
+ * There is a slight performance cost in rendering line-caps. An
  * effort has been made to restrict line-cap definitions to styles
  * where the results will be visible (lines at least 2 pixels thick).
  */
@@ -16,10 +16,10 @@
 /* == 1. FONTS ====================================================== */
 
 /* We're only using @sans so far. TODO: more type variety. */
-@sans:              "Ubuntu Regular","Arial Regular","DejaVu Sans Book";
-@sans_bold:         "Arial Bold", "DejaVu Sans Bold";
-@sans_italic:       "Arial Italic", "DejaVu Sans Oblique";
-@sans_bold_italic:  "Arial Bold Italic", " DejaVu Sans Bold Oblique";
+@sans: "Ubuntu Regular","Arial Regular","DejaVu Sans Book";
+@sans_bold: "Arial Bold", "DejaVu Sans Bold";
+@sans_italic: "Arial Italic", "DejaVu Sans Oblique";
+@sans_bold_italic: "Arial Bold Italic", " DejaVu Sans Bold Oblique";
 
 /* Some fonts are larger or smaller than others. Use this variable to
    globally increase or decrease the font sizes. */
@@ -29,93 +29,97 @@
 
 /* ---- Lancover & Landuse ------------------------------------------ */
 
-@land:              #fcfbe7;
-@water:             #c4dff2;
+@land: #fcfbe7;
+@water: #c4dff2;
 
-@agriculture:       #f4f0e0;
-@beach:             #ffeec7;
-@building:          #CDC6C6;
-@cemetery:          #d1d1d1;
-@forest:            #c7e6a8;
-@grass:             lighten(@forest,5);
-@hospital:          rgb(229,198,195);
-@industrial:        #e8e8e8;
-@park:              lighten(@forest,10);
-@parking:           #eee;
-@residential:       desaturate(darken(@land,5),10);
-@school:            #FEA;
-@sports:            #DED1AB;
-@transport:         rgb(200,200,200);
+@agriculture: #f4f0e0;
+@beach: #ffeec7;
+@building: #CDC6C6;
+@cemetery: #d1d1d1;
+@forest: #c7e6a8;
+@grass: lighten(@forest,5);
+@hospital: rgb(229,198,195);
+@industrial: #e8e8e8;
+@park: lighten(@forest,10);
+@parking: #eee;
+@residential: desaturate(darken(@land,5),10);
+@school: #FEA;
+@sports: #DED1AB;
+@transport: rgb(200,200,200);
 
 /* ---- Roads ------------------------------------------------------- */
 /* For each class of road there are three color variables:
  * - line: for lower zoomlevels when the road is represented by a
- *         single solid line.
+ * single solid line.
  * - case: for higher zoomlevels, this color is for the road's
- *         casing (outline).
+ * casing (outline).
  * - fill: for higher zoomlevels, this color is for the road's
- *         inner fill (inline).
+ * inner fill (inline).
  */
 
-@motorway_line:     #D84F48;
-@motorway_fill:     lighten(@motorway_line,10%);
-@motorway_case:     darken(@motorway_line,20%);
+@motorway_line: #D84F48;
+@motorway_fill: lighten(@motorway_line,10%);
+@motorway_case: darken(@motorway_line,20%);
 
-@trunk_line:        @motorway_line;
-@trunk_fill:        @motorway_fill;
-@trunk_case:        @motorway_case;
+@trunk_line: @motorway_line;
+@trunk_fill: @motorway_fill;
+@trunk_case: @motorway_case;
 
-@primary_line:      #4888d8;
-@primary_fill:      lighten(@primary_line,10%);
-@primary_case:      darken(@primary_line,20%);
+@primary_line: #4888d8;
+@primary_fill: lighten(@primary_line,10%);
+@primary_case: darken(@primary_line,20%);
 
-@secondary_line:    darken(#f9cf66,20%);
-@secondary_fill:    lighten(#f9cf66,20%);
-@secondary_case:    @secondary_line;
+@secondary_line: darken(#f9cf66,20%);
+@secondary_fill: lighten(#f9cf66,20%);
+@secondary_case: @secondary_line;
 
-@standard_line:     @land * 0.9;
-@standard_fill:     #fff;
-@standard_case:     fadeout(#000,90%);
+@standard_line: @land * 0.9;
+@standard_fill: #fff;
+@standard_case: fadeout(#000,90%);
 
-@pedestrian_line:   @standard_line;
-@pedestrian_fill:   #FAFAF5;
-@pedestrian_case:   @standard_case;
+@pedestrian_line: @standard_line;
+@pedestrian_fill: #FAFAF5;
+@pedestrian_case: @standard_case;
 
-@bridge_case:       rgba(0,0,0,0.33);
+@ped_line: @standard_line;
+@ped_fill: #623209;
+@ped_case: @standard_case;
 
-@track:             #aaa;
+@bridge_case: rgba(0,0,0,0.33);
 
-@rail_line:         #8F22B7;
-@rail_fill:        lighten(@rail_line,10%);
-@rail_case:        darken(@rail_line,20%);
+@track: #aaa;
 
-@red_line:        #f00;
-@red_fill:        lighten(@red_line,10%);
-@red_case:        darken(@red_line,20%);
+@rail_line: #B7008E;
+@rail_fill: lighten(@rail_line,10%);
+@rail_case: darken(@rail_line,20%);
 
-@green_line:        #060;
-@green_fill:        lighten(@green_line,10%);
-@green_case:        darken(@green_line,20%);
+@red_line: #E8112D;
+@red_fill: lighten(@red_line,10%);
+@red_case: darken(@red_line,20%);
 
-@blue_line:        #00f;
-@blue_fill:        lighten(@blue_line,10%);
-@blue_case:        darken(@blue_line,20%);
+@green_line: #009E60;
+@green_fill: lighten(@green_line,10%);
+@green_case: darken(@green_line,20%);
 
-@orange_line:        #FF6314;
-@orange_fill:        lighten(@orange_line,10%);
-@orange_case:        darken(@orange_line,20%);
+@blue_line: #3A75C4;
+@blue_fill: lighten(@blue_line,10%);
+@blue_case: darken(@blue_line,20%);
 
-@aeroway:           rgb(180,180,180);
+@orange_line: #E28C05;
+@orange_fill: lighten(@orange_line,10%);
+@orange_case: darken(@orange_line,20%);
+
+@aeroway: rgb(180,180,180);
 
 /* ---- Boundaries -------------------------------------------------- */
 
-@admin_2:           #324;
+@admin_2: #324;
 
 /* ---- Places ------------------------------------------------------ */
 
-@default_halo:      fadeout(#fff,25%);
+@default_halo: fadeout(#fff,25%);
 
-@country_text:      #435;
-@country_halo:      @default_halo;
+@country_text: #435;
+@country_halo: @default_halo;
 
 /* ****************************************************************** */

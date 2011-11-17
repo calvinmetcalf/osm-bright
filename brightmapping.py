@@ -361,6 +361,101 @@ landusages = Polygons(
         ),
 })
 
+shops = Points(
+    name='shops',
+    fields = (
+        ('service:bicycle:retail', Bool()),
+        ('service:bicycle:repair', Bool()),
+        ('service:bicycle:rental', Bool()),
+        ('service:bicycle:pump', Bool()),
+        ('service:bicycle:diy', Bool()),
+        ('service:bicycle:cleaning', Bool()),
+        ('service:bicycle:second_hand', Bool()),
+        ('service:copy', Bool()),
+        ('service:fax', Bool()),
+        ('service:phone', Bool()),
+        ('service:print', Bool()),
+        ('service:press', Bool()),
+        ('service:prepress', Bool()),
+        ('name', String()),
+        ('produce', String()),
+        ('self_service', Bool()),
+    ),
+    mapping = {
+        'shop': (
+            'bicycle',
+            'books',
+            'car_repair',
+            'copyshop',
+            'convenience',
+            'farm',
+            'laundry',
+            'outdoor',
+            'supermarket',
+        ),
+})
+tourism = Points(
+    name='tourism',
+    fields = (
+        ('name', String()),
+        ('zoo', String()),
+        ('castle_type', String()),
+    ),
+    mapping = {
+        'tourism': (
+            'zoo',
+            'information',
+            'gallery',
+            'museum',
+        ),
+        'historic': (
+        		'battlefield',
+						'memorial',
+						'castle',
+        ),
+
+})
+manmade = Points(
+    name='manmade',
+    fields = (
+        ('name', String()),
+        ('operator', String()),
+        ('surveillance', String()),
+    ),
+    mapping = {
+        'man_made': (
+            'crane',
+            'flagpole',
+            'lighthouse',
+            'surveillance',
+            'tower',
+        ),
+})
+power = Points(
+    name='power',
+    fields = (
+        ('generator:source', String()),
+        ('power_source', String()),
+    ),
+    mapping = {
+        'power': (
+            'generator',
+            ),
+})
+info = Points(
+    name='info',
+    mapping = {
+        'information': (
+            'office',
+            'terminal',
+            'audioguide',
+            'guidepost',
+            'map',
+            'tactile_map',
+            'tactile_model',
+            'board',
+        ),
+})
 amenities = Points(
     name='amenities',
     fields = (
@@ -399,9 +494,14 @@ amenities = Points(
             'post_office',
             'public_building',
             'post_box',
+            'restaurant',
+            'pub',
+            'bar',
+            'cafe',
+            'ice_cream',
+            'toilets',
         ),
 })
-
 motorways_gen1 = GeneralizedTable(
     name = 'motorways_gen1',
     tolerance = meter_to_mapunit(50.0),
