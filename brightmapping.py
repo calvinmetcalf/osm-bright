@@ -421,6 +421,7 @@ manmade = Points(
         ('name', String()),
         ('operator', String()),
         ('surveillance', String()),
+        ('tower:type', String()),
     ),
     mapping = {
         'man_made': (

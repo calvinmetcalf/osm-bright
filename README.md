@@ -11,7 +11,7 @@ implementation.
 
 This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS.   This update has some fairly massive changes, see the bottom. 
 
-11/18/11 added walking paths, fixed shield icons (yes I know thats a modified california us route shield, but the square background looked too much like the state one) havn't fixed placement. added walking paths (you'll need to redownload the datafile) modified mbta colors and icons based on their style guide.  Added more poi. Updated osm-bright.imposm.mml to actually take into account my changes (the absolute paths in there will be overwritten by configure.py)
+11/18/11 added walking paths, fixed shield icons (yes I know thats a modified california us route shield, but the square background looked too much like the state one) havn't fixed placement. added walking paths (you'll need to redownload the datafile) modified mbta colors and icons based on their style guide.  Added more poi. Updated osm-bright.imposm.mml to actually take into account my changes (the absolute paths in there will be overwritten by configure.py). Added some more poi including survailance (and added an icon for it) and towers(need to add icons for different types). Also first stab at bus routes, that datafile isn't in the main zip so you can [http://db.tt/PeV8HoV6](grab it here).
 
 [Carto]: http://github.com/mapbox/carto/
 [TileMill]: http://tilemill.com/

@@ -711,7 +711,7 @@
   shield-face-name:@sans;
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   shield-file:url(res/US16.png);
   }
@@ -721,7 +721,7 @@
   shield-face-name:@sans;
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
       shield-file:url(res/USW16.png);
   }
@@ -735,7 +735,7 @@
    shield-file:url(res/MA16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   }
   [three=1]
@@ -745,7 +745,7 @@
    shield-file:url(res/MAW16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   }
   }
@@ -759,7 +759,7 @@
   shield-face-name:@sans;
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   shield-file:url(res/US16.png);
   }
@@ -769,7 +769,7 @@
   shield-face-name:@sans;
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
       shield-file:url(res/USW16.png);
   }
@@ -783,7 +783,7 @@
    shield-file:url(res/MA16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   }
   [three=1]
@@ -793,7 +793,7 @@
    shield-file:url(res/MAW16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   }
   }
@@ -808,7 +808,7 @@
   shield-face-name:@sans;
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   shield-file:url(res/US16.png);
   }
@@ -818,7 +818,7 @@
   shield-face-name:@sans;
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
       shield-file:url(res/USW16.png);
   }
@@ -832,7 +832,7 @@
    shield-file:url(res/MA16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   }
   [three=1]
@@ -842,7 +842,7 @@
    shield-file:url(res/MAW16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:30;
+  shield-min-distance:90;
   shield-spacing:90;
   }
   }
@@ -921,6 +921,34 @@ line-width:2;
 [zoom=17]{ point-file: url(png/transport_bus_stop.glow.16.png); }
 [zoom=18]{ point-file: url(png/transport_bus_stop.glow.20.png); }
     }
+#bus
+{
+[zoom=16]{
+ ::case { line-width:1+.8;
+    line-color:@standard_case;
+  }
+   ::fill { line-width:1;
+    line-color:@ped_fill;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:3+1.5;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:3;
+    line-color:@ped_fill;
+  }
+  }
+[zoom=18]{
+ ::case { line-width:4+2;
+
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-color:@ped_fill;
+  }
+  }
+}
 #ComSt{
 [zoom=15]{ point-file: url(png/transport_train_station.glow.12.png); }
 [zoom=16]{ point-file: url(png/transport_train_station.glow.16.png); }

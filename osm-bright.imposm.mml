@@ -6,9 +6,9 @@
     43
   ],
   "center": [
-    -71.0739901065819,
-    42.35133869086801,
-    16
+    -71.07918286323473,
+    42.325270968148644,
+    15
   ],
   "format": "png",
   "interactivity": false,
@@ -677,6 +677,19 @@
     },
     {
       "geometry": "linestring",
+      "name": "bus",
+      "id": "bus",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/bus.geojson",
+        "id": "bus",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
       "name": "ComLine",
       "id": "ComLine",
       "srs": "",
@@ -740,6 +753,50 @@
     },
     {
       "geometry": "point",
+      "name": "power",
+      "id": "power",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select * from osm_power) as power",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "power",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "manmade",
+      "id": "manmade",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select * from osm_manmade) as manmade",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "manmade",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
       "name": "trans",
       "id": "trans",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -798,7 +855,10 @@
         "host": "localhost",
         "port": "5432",
         "user": "osm",
-        "password": "osm"
+        "password": "osm",
+        "id": "tourism",
+        "project": "osm-bright",
+        "srs": null
       }
     },
     {
