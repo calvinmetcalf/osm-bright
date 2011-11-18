@@ -288,7 +288,7 @@
   }
    ::fill { line-width:2;
   line-dasharray:8,4;
-  line-color:#c00;
+  line-color:#0025E0;
   }
   }
 [zoom=15]#bike[type='On-road divided lane']{
@@ -308,7 +308,7 @@
   }
    ::fill { line-width:2;
   line-dasharray:4,2;
-  line-color:#0025E0;
+  line-color:#c00;
   }
   }
 
@@ -385,7 +385,7 @@
   }
    ::fill { line-width:2;
   line-dasharray:8,4;
-  line-color:#c00;
+  line-color:#0025E0;
   }
   }
 [zoom=16]#bike[type='On-road divided lane']{
@@ -405,7 +405,7 @@
   }
    ::fill { line-width:2;
   line-dasharray:4,2;
-  line-color:#0025E0;
+  line-color:#c00;
   }
   }
   
@@ -478,7 +478,7 @@
   }
    ::fill { line-width:4;
   line-dasharray:8,4;
-  line-color:#c00;
+  line-color:#0025E0;
   }
   }
 [zoom=17]#bike[type='On-road divided lane']{
@@ -498,7 +498,7 @@
   }
    ::fill { line-width:4;
   line-dasharray:4,2;
-  line-color:#0025E0;
+  line-color:#c00;
   }
   }
  
@@ -573,7 +573,7 @@
   }
    ::fill { line-width:8;
   line-dasharray:8,4;
-  line-color:#c00;
+  line-color:#0025E0;
   }
   }
 [zoom=18]#bike[type='On-road divided lane']{
@@ -593,7 +593,7 @@
   }
    ::fill { line-width:8;
   line-dasharray:4,2;
-  line-color:#0025E0;
+  line-color:#c00;
   }
   }
  
@@ -637,7 +637,7 @@
   }
    ::fill { line-width:10;
   line-dasharray:4,2;
-  line-color:#0025E0;
+  line-color:#c00;
   }
   }
   
@@ -685,8 +685,8 @@
    shield-file:url(res/I16.png);
   shield-fill:#fff;
   shield-size:10;
-  shield-min-distance:40;
-  shield-spacing:60;
+  shield-min-distance:30;
+  shield-spacing:90;
       shield-text-dx:1;
   }
   [three=1]
@@ -696,8 +696,8 @@
    shield-file:url(res/IW16.png);
   shield-fill:#fff;
   shield-size:10;
-  shield-min-distance:40;
-  shield-spacing:80;
+  shield-min-distance:30;
+  shield-spacing:90;
     shield-text-dx:1;
   }
 }
@@ -712,7 +712,7 @@
   shield-fill:#000;
   shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;
+  shield-spacing:90;
   shield-file:url(res/US16.png);
   }
     [three=1]
@@ -722,7 +722,7 @@
   shield-fill:#000;
   shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;
+  shield-spacing:90;
       shield-file:url(res/USW16.png);
   }
   }
@@ -735,8 +735,8 @@
    shield-file:url(res/MA16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:50;
-  shield-spacing:70;
+  shield-min-distance:30;
+  shield-spacing:90;
   }
   [three=1]
   {
@@ -745,8 +745,8 @@
    shield-file:url(res/MAW16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:50;
-  shield-spacing:70;
+  shield-min-distance:30;
+  shield-spacing:90;
   }
   }
 }
@@ -760,7 +760,7 @@
   shield-fill:#000;
   shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;
+  shield-spacing:90;
   shield-file:url(res/US16.png);
   }
     [three=1]
@@ -770,7 +770,7 @@
   shield-fill:#000;
   shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;
+  shield-spacing:90;
       shield-file:url(res/USW16.png);
   }
   }
@@ -783,8 +783,8 @@
    shield-file:url(res/MA16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:50;
-  shield-spacing:70;
+  shield-min-distance:30;
+  shield-spacing:90;
   }
   [three=1]
   {
@@ -793,8 +793,8 @@
    shield-file:url(res/MAW16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:50;
-  shield-spacing:70;
+  shield-min-distance:30;
+  shield-spacing:90;
   }
   }
 }
@@ -809,7 +809,7 @@
   shield-fill:#000;
   shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;
+  shield-spacing:90;
   shield-file:url(res/US16.png);
   }
     [three=1]
@@ -819,7 +819,7 @@
   shield-fill:#000;
   shield-size:10;
   shield-min-distance:30;
-  shield-spacing:50;
+  shield-spacing:90;
       shield-file:url(res/USW16.png);
   }
   }
@@ -832,8 +832,8 @@
    shield-file:url(res/MA16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:50;
-  shield-spacing:70;
+  shield-min-distance:30;
+  shield-spacing:90;
   }
   [three=1]
   {
@@ -842,8 +842,8 @@
    shield-file:url(res/MAW16.png);
   shield-fill:#000;
   shield-size:10;
-  shield-min-distance:50;
-  shield-spacing:70;
+  shield-min-distance:30;
+  shield-spacing:90;
   }
   }
 }
@@ -855,7 +855,8 @@
   text-fill:#444;
   text-halo-fill:#fff;
   text-halo-radius:1;
-  text-min-distance:60;
+  text-min-distance:20;
+  text-spacing:90;
   text-size:11;
 }
 

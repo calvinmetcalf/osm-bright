@@ -9,7 +9,9 @@ The style is still a work in progress and you are encouraged to use the
 [issue tracker][] to note missing features or problems with the current
 implementation. 
 
-This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS.   This update has some fairly massive changes, see the bottom.
+This version is aimed at displaying massachussetts best, and uses shapefiles from [MassDOT][] and massGIS.   This update has some fairly massive changes, see the bottom. 
+
+11/18/11 added walking paths, fixed shield icons (yes I know thats a modified california us route shield, but the square background looked too much like the state one) havn't fixed placement. added walking paths (you'll need to redownload the datafile) modified mbta colors and icons based on their style guide.  Added more poi. Updated osm-bright.imposm.mml to actually take into account my changes (the absolute paths in there will be overwritten by configure.py)
 
 [Carto]: http://github.com/mapbox/carto/
 [TileMill]: http://tilemill.com/
@@ -42,14 +44,14 @@ You will need an OSM database extract in one of the following formats:
 - .osm.bz2 (compressed xml)
 - .osm (xml)
 
-this tutorial will assume your using the us-northeast.pbf which you can grab from <http://download.geofabrik.de/osm> (in north-america folder)
+this tutorial will assume your using the us-northeast.pbf which you can grab from <http://download.geofabrik.de/osm> (in [north-america folder](http://download.geofabrik.de/osm/north-america/)
 
 You can find appropriate data extracts for a variety of regions at
-<http://download.geofabrik.de/osm> or <http://downloads.cloudmade.com>. See
-also [the OSM wiki][2] for information about (very large) full-planet
+[geofabrik](http://download.geofabrik.de/osm/) or [cloude made](http://downloads.cloudmade.com). See
+also [the OSM wiki](http://wiki.openstreetmap.org/wiki/Planet.osm) for information about (very large) full-planet
 downloads.
 
-OSM Bright requires a PostGIS database imported with [ImpOSM][]. Support for
+OSM Bright requires a PostGIS database imported with [ImpOSM](http://imposm.org). Support for
 OSM2PGSQL is planned but not yet implemented. 
 
 
@@ -126,7 +128,7 @@ for the icons your going to need to grab my fork of the [open svg map icon set](
 
 ## TODO ##
 
-* improve the shields so they are different sizes on different zooms.
-* walking paths
+* shields are sized right, but placement has to be improved
+* walking paths are done
 * get rid of as many of the geojson files as possible in favor of osm data to make it slightly less massachusetts centric
 

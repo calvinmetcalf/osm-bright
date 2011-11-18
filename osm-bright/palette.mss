@@ -89,25 +89,25 @@
 
 @track: #aaa;
 
-@rail_line: #B7008E;
-@rail_fill: lighten(@rail_line,10%);
-@rail_case: darken(@rail_line,20%);
+@rail_line: #8c78ab;
+@rail_fill: lighten(@rail_line,1%);
+@rail_case: darken(@rail_line,10%);
 
-@red_line: #E8112D;
-@red_fill: lighten(@red_line,10%);
-@red_case: darken(@red_line,20%);
+@red_line: #e32332;
+@red_fill: lighten(@red_line,1%);
+@red_case: darken(@red_line,10%);
 
-@green_line: #009E60;
-@green_fill: lighten(@green_line,10%);
-@green_case: darken(@green_line,20%);
+@green_line: #01764a;
+@green_fill: lighten(@green_line,1%);
+@green_case: darken(@green_line,10%);
 
-@blue_line: #3A75C4;
-@blue_fill: lighten(@blue_line,10%);
-@blue_case: darken(@blue_line,20%);
+@blue_line: #00579a;
+@blue_fill: lighten(@blue_line,1%);
+@blue_case: darken(@blue_line,10%);
 
-@orange_line: #E28C05;
-@orange_fill: lighten(@orange_line,10%);
-@orange_case: darken(@orange_line,20%);
+@orange_line: #fe7815;
+@orange_fill: lighten(@orange_line,1%);
+@orange_case: darken(@orange_line,10%);
 
 @aeroway: rgb(180,180,180);
 
