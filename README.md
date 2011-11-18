@@ -47,7 +47,7 @@ You will need an OSM database extract in one of the following formats:
 this tutorial will assume your using the us-northeast.pbf which you can grab from <http://download.geofabrik.de/osm> (in [north-america folder](http://download.geofabrik.de/osm/north-america/)
 
 You can find appropriate data extracts for a variety of regions at
-[geofabrik](http://download.geofabrik.de/osm/) or [cloude made](http://downloads.cloudmade.com). See
+[geofabrik](http://download.geofabrik.de/osm/) or [cloud made](http://downloads.cloudmade.com). See
 also [the OSM wiki](http://wiki.openstreetmap.org/wiki/Planet.osm) for information about (very large) full-planet
 downloads.
 
