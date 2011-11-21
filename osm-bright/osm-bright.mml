@@ -6,9 +6,9 @@
     43
   ],
   "center": [
-    -71.07918286323473,
-    42.325270968148644,
-    15
+    -71.08465456962512,
+    42.35013150308202,
+    17
   ],
   "format": "png",
   "interactivity": false,
@@ -673,19 +673,6 @@
       "class": "",
       "Datasource": {
         "file": "data/m.geojson"
-      }
-    },
-    {
-      "geometry": "linestring",
-      "name": "bus",
-      "id": "bus",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "data/bus.geojson",
-        "id": "bus",
-        "project": "osm-bright",
-        "srs": null
       }
     },
     {

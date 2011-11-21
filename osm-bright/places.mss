@@ -61,7 +61,7 @@
   [zoom>14]{ text-size:15; }
 }
 
-#place::town[type='town'][zoom>10] {
+#place::town[type='town'][zoom>9] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
@@ -524,16 +524,18 @@
 [zoom=17]{ point-file: url(png/poi_cctv.glow.20.png); }
 [zoom=18]{ point-file: url(png/poi_cctv.glow.24.png); }
      }
-  [type='surveillance']{
-[zoom=15]{ point-file: url(png/poi_cctv.glow.12.png); }
-[zoom=16]{ point-file: url(png/poi_cctv.glow.16.png); }
-[zoom=17]{ point-file: url(png/poi_cctv.glow.20.png); }
-[zoom=18]{ point-file: url(png/poi_cctv.glow.24.png); }
-     }
   [type='tower']{
+    ['tower:type'='communication']{
 [zoom=15]{ point-file: url(png/poi_tower_communications.glow.12.png); }
 [zoom=16]{ point-file: url(png/poi_tower_communications.glow.16.png); }
 [zoom=17]{ point-file: url(png/poi_tower_communications.glow.20.png); }
 [zoom=18]{ point-file: url(png/poi_tower_communications.glow.24.png); }
      }
+     ['tower:type'='observation']{
+[zoom=15]{ point-file: url(png/poi_tower_lookout.glow.12.png); }
+[zoom=16]{ point-file: url(png/poi_tower_lookout.glow.16.png); }
+[zoom=17]{ point-file: url(png/poi_tower_lookout.glow.20.png); }
+[zoom=18]{ point-file: url(png/poi_tower_lookout.glow.24.png); }
+     }
+  }
   }
