@@ -83,7 +83,7 @@
 
 @ped_line: @standard_line;
 @ped_fill: #623209;
-@ped_case: @standard_case;
+@ped_case: darken(@ped_fill,20%);
 
 @bridge_case: rgba(0,0,0,0.33);
 

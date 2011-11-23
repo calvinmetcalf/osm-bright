@@ -6,9 +6,9 @@
     43
   ],
   "center": [
-    -71.08465456962512,
-    42.35013150308202,
-    17
+    -71.0557671785347,
+    42.35107505413453,
+    15
   ],
   "format": "png",
   "interactivity": false,
@@ -306,8 +306,8 @@
         "key_field": "",
         "password": "osm",
         "port": "5432",
-        "project": "foss4g-2011",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "osm-bright",
+        "srs": null,
         "table": "(select geometry, type\nfrom osm_transport_areas\n) as transport",
         "type": "postgis",
         "user": "osm"
@@ -936,7 +936,10 @@
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "data/ts.geojson"
+        "file": "data/ts.geojson",
+        "id": "ts",
+        "project": "osm-bright",
+        "srs": null
       }
     },
     {

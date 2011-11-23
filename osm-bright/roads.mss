@@ -1516,6 +1516,7 @@
   text-fill:#444;
   text-halo-fill:#fff;
   text-halo-radius:1;
+    text-min-distance:7;
   text-spacing:60;
   text-size:11;
 }
@@ -1527,6 +1528,7 @@
   text-fill:#444;
   text-halo-fill:#fff;
   text-halo-radius:1;
+    text-min-distance:30;
   text-spacing:60;
   text-size:11;
 }
@@ -1601,43 +1603,33 @@ line-width:2;
 #ped
 {
 [zoom=15]{
- ::case { line-width:2+2;
-  line-dasharray:2,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:2,2;
+
+   ::fill { line-width:1.5;
+
   line-color:@ped_fill;
   }
   }
 [zoom=16]{
- ::case { line-width:4+2;
-  line-dasharray:2,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:4;
-  line-dasharray:2,2;
+ 
+   ::fill { line-width:3;
+line-join:round;
   line-color:@ped_fill;
   }
   }
 [zoom=17]{
- ::case { line-width:8+3;
-  line-dasharray:2,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:8;
-  line-dasharray:2,2;
+
+   ::fill { line-width:4;
+line-join:round;
   line-color:@ped_fill;
   }
   }
   [zoom=18]{
- ::case { line-width:10+2;
-  line-dasharray:2,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:10;
-  line-dasharray:2,2;
+
+   ::fill { line-width:6;
+ 
   line-color:@ped_fill;
+      line-join:round;
+ 
   }
   }
 }
