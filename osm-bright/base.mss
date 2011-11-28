@@ -201,10 +201,10 @@ Map { background-color: @water; }
 }
 
 /* == 7. ADMINISTRATIVE BOUNDARIES ================================== */
-#count[zoom>5][zoom<9] {
-  line-color:@admin_2;
-  line-width:1;
-}
+/*#count[zoom>5][zoom<9] {
+  [OUTLINE=9]{line-color:@admin_2;
+  line-width:1;}
+}*/
 #town[zoom>8] {
   line-color:@admin_2;
   line-width:1;
@@ -212,7 +212,7 @@ Map { background-color: @water; }
   line-dasharray:4,4;
 }
 
-#admin[admin_level<5][zoom=2] {
+#out[zoom=2] {
   line-color:@admin_2;
   line-width:1.5;
   line-opacity: 0.25; }
@@ -221,12 +221,12 @@ Map { background-color: @water; }
   line-width:1.5;
   
   line-opacity: 0.3; }
- #admin[admin_level<5][zoom=4] {
+ #out[zoom=4] {
   line-color:@admin_2;
   line-width:1.5;
  line-opacity: 0.4;
 }
-#admin[admin_level<5][zoom>4] {
+#out[zoom>4] {
   line-color:@admin_2;
   line-width:1;
   

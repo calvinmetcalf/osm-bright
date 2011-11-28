@@ -6,9 +6,9 @@
     43
   ],
   "center": [
-    -71.0557671785347,
-    42.35107505413453,
-    15
+    -71.26472198963087,
+    42.205903347514536,
+    10
   ],
   "format": "png",
   "interactivity": false,
@@ -253,7 +253,10 @@
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "data/count.geojson"
+        "file": "data/count.geojson",
+        "id": "count",
+        "project": "osm-bright",
+        "srs": null
       }
     },
     {
@@ -266,16 +269,27 @@
         "key_field": "",
         "password": "osm",
         "port": "5432",
-        "project": "osm-bright-imposm",
+        "project": "osm-bright",
         "table": "osm_admin",
         "type": "postgis",
-        "user": "osm"
+        "user": "osm",
+        "srs": null
       },
       "class": "",
       "geometry": "polygon",
       "id": "admin",
       "name": "admin",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "geometry": "linestring",
+      "name": "out",
+      "id": "out",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/outline.geojson"
+      }
     },
     {
       "Datasource": {

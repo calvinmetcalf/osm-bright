@@ -190,6 +190,23 @@ transport_points = Points(
     )}
 )
 
+shields = LineStrings(
+		name = 'shields',
+		fields = (
+				('network', String()),
+				('ref', String()),
+				('symbol', String()),
+				('name', String()),	
+				('route', String()),		
+				('z_order', WayZOrder()),
+    ),
+	mapping = {
+			'type': (
+						'route',
+			)
+			}
+		)
+		
 railways = LineStrings(
     name = 'railways',
     fields = (
