@@ -1,5 +1,63 @@
-
-#s
+#moterway{
+  ['functional'=5],['functional'=6],['functional'=0]
+    {
+    [zoom=13]{
+    ::line { line-width: 1;
+    line-color:@standard_line;}
+  }
+  [zoom=14]{
+    ::case { line-width: 2+1.5;
+    line-color:@standard_case;}
+    ::fill { line-width: 2;
+    line-color:@standard_fill;}
+  }
+  [zoom=15] {
+    ::case { line-width:2+2;
+    line-color:@standard_case;}
+    ::fill { line-width:2;
+    line-color:@standard_fill;}
+  }
+   [zoom=16] {
+    ::case { line-width:4+2;
+    line-color:@standard_case;}
+    ::fill { line-width:4;
+    line-color:@standard_fill;}
+  }
+   [zoom=17] {
+    ::case { line-width:8+3;
+    line-color:@standard_case;}
+    ::fill { line-width:8;
+    line-color:@standard_fill;}
+  }
+[zoom=18]{
+    ::case { line-width:10+2;
+    line-color:@standard_case;}
+    ::fill { line-width:10;
+    line-color:@standard_fill;}
+  }
+  }
+ ['functional'=5],['functional'=6]
+    {
+    [zoom=11]
+{
+ 
+    ::line { line-width: 0.25;
+    line-color:@standard_line;}
+  }
+ [zoom=12]{
+    ::line { line-width: 0.5;
+    line-color:@standard_line;}
+  }
+  }
+   
+['functional'=0]
+    {
+    [zoom=12] {
+    ::line { line-width: 0.5;
+    line-color:@standard_line;}
+  }
+    }
+['functional'=3]
 {
 [zoom=9] {
     ::line { line-width: 0.5;
@@ -54,7 +112,7 @@
     line-color:@secondary_fill;}
   }
 }
-#p
+['functional'=2]
 {
   [zoom=7]
 {
@@ -119,7 +177,7 @@
     line-color:@primary_fill;}
   }
 }
-#m
+['functional'=1]
 {
 [zoom=5] {
 
@@ -201,62 +259,4 @@
   }
   }
 
-
-  #t,#l
-    {
-    [zoom=13]{
-    ::line { line-width: 1;
-    line-color:@standard_line;}
-  }
-  [zoom=14]{
-    ::case { line-width: 2+1.5;
-    line-color:@standard_case;}
-    ::fill { line-width: 2;
-    line-color:@standard_fill;}
-  }
-  [zoom=15] {
-    ::case { line-width:2+2;
-    line-color:@standard_case;}
-    ::fill { line-width:2;
-    line-color:@standard_fill;}
-  }
-   [zoom=16] {
-    ::case { line-width:4+2;
-    line-color:@standard_case;}
-    ::fill { line-width:4;
-    line-color:@standard_fill;}
-  }
-   [zoom=17] {
-    ::case { line-width:8+3;
-    line-color:@standard_case;}
-    ::fill { line-width:8;
-    line-color:@standard_fill;}
-  }
-[zoom=18]{
-    ::case { line-width:10+2;
-    line-color:@standard_case;}
-    ::fill { line-width:10;
-    line-color:@standard_fill;}
-  }
-  }
-  #t
-    {
-    [zoom=11]
-{
- 
-    ::line { line-width: 0.25;
-    line-color:@standard_line;}
-  }
- [zoom=12]{
-    ::line { line-width: 0.5;
-    line-color:@standard_line;}
-  }
-  }
-   
- #l
-    {
-    [zoom=12] {
-    ::line { line-width: 0.5;
-    line-color:@standard_line;}
-  }
-    }
+}

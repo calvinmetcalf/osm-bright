@@ -10,10 +10,13 @@
  */
 
 /* == 1. LANDUSE & LANDCOVER ======================================== */
-
-#land[zoom>=0][zoom<6],
-#shoreline_300[zoom>=6][zoom<10],
-#processed_p[zoom>=10] {
+#land[zoom=0]{
+  polygon-fill: @land;
+  polygon-gamma: 0.75;
+}
+#land[zoom>0][zoom<6],
+#shoreline_300[zoom<10],
+#processed_p[zoom>9] {
   polygon-fill: @land;
   polygon-gamma: 0.75;
 }
@@ -201,16 +204,18 @@ Map { background-color: @water; }
 }
 
 /* == 7. ADMINISTRATIVE BOUNDARIES ================================== */
-/*#count[zoom>5][zoom<9] {
-  [OUTLINE=9]{line-color:@admin_2;
-  line-width:1;}
-}*/
+
+
 #town[zoom>8] {
   line-color:@admin_2;
   line-width:1;
    line-opacity: 0.4;
   line-dasharray:4,4;
 }
+
+#count[zoom>6][zoom<10] {
+ line-color:@admin_2;
+  line-width:1;}
 
 #out[zoom=2] {
   line-color:@admin_2;

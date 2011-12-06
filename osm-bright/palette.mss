@@ -1,3 +1,5 @@
+
+
 /* ****************************************************************** */
 /* OSM BRIGHT for ImpOSM */
 /* ****************************************************************** */
@@ -56,6 +58,9 @@
  * - fill: for higher zoomlevels, this color is for the road's
  * inner fill (inline).
  */
+@standard_line: @land * 0.9;
+@standard_fill: #fff;
+@standard_case: fadeout(#000,90%);
 
 @motorway_line: #D84F48;
 @motorway_fill: lighten(@motorway_line,10%);
@@ -72,10 +77,6 @@
 @secondary_line: darken(#f9cf66,20%);
 @secondary_fill: lighten(#f9cf66,20%);
 @secondary_case: @secondary_line;
-
-@standard_line: @land * 0.9;
-@standard_fill: #fff;
-@standard_case: fadeout(#000,90%);
 
 @pedestrian_line: @standard_line;
 @pedestrian_fill: #FAFAF5;
