@@ -215,7 +215,9 @@ Map { background-color: @water; }
 
 #count[zoom>6][zoom<10] {
  line-color:@admin_2;
-  line-width:1;}
+   line-opacity: 0.6;
+  line-width:1;
+line-dasharray:2,2;}
 
 #out[zoom=2] {
   line-color:@admin_2;

@@ -6,9 +6,9 @@
     43
   ],
   "center": [
-    -71.0557671785347,
-    42.35107505413453,
-    15
+    -70.91526913642862,
+    42.224610339621435,
+    10
   ],
   "format": "png",
   "interactivity": false,
@@ -247,13 +247,13 @@
       }
     },
     {
-      "geometry": "linestring",
+      "geometry": "polygon",
       "name": "count",
       "id": "count",
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "data/count.geojson"
+        "file": "data/count10.geojson"
       }
     },
     {
@@ -266,16 +266,27 @@
         "key_field": "",
         "password": "osm",
         "port": "5432",
-        "project": "osm-bright-imposm",
+        "project": "osm-bright",
         "table": "osm_admin",
         "type": "postgis",
-        "user": "osm"
+        "user": "osm",
+        "srs": null
       },
       "class": "",
       "geometry": "polygon",
       "id": "admin",
       "name": "admin",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "geometry": "polygon",
+      "name": "out",
+      "id": "out",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/states.geojson"
+      }
     },
     {
       "Datasource": {
@@ -389,16 +400,19 @@
     },
     {
       "Datasource": {
-        "dbname": "osm",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "geometry_field": "",
-        "host": "localhost",
+        "table": "( select * from osm_roads where type in \n('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'secondary', 'secondary_link', 'tertiary', 'tertiary_link', 'road', 'residential', 'unknown', 'unclassified', 'living_street', 'service')\norder by z_order) as road",
         "key_field": "",
-        "password": "osm",
-        "port": "5432",
-        "table": "( select geometry, type, tunnel from osm_roads where type in \n('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'secondary', 'secondary_link', 'tertiary', 'tertiary_link', 'road', 'residential', 'unknown', 'unclassified', 'living_street', 'service')\norder by z_order) as road",
+        "geometry_field": "",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
         "type": "postgis",
-        "user": "osm"
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "roads_high",
+        "project": "osm-bright",
+        "srs": null
       },
       "class": "",
       "geometry": "linestring",
@@ -417,7 +431,10 @@
         "port": "5432",
         "table": "(select geometry, type,bridge,tunnel from osm_roads_gen1) as road",
         "type": "postgis",
-        "user": "osm"
+        "user": "osm",
+        "id": "roads_med",
+        "project": "osm-bright",
+        "srs": null
       },
       "class": "",
       "geometry": "linestring",
@@ -497,8 +514,8 @@
         "key_field": "",
         "password": "osm",
         "port": "5432",
-        "project": "foss4g-2011",
-        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "osm-bright",
+        "srs": null,
         "table": "(select geometry, type, name, ref, oneway\nfrom osm_motorways\nwhere name is not null or ref is not null or oneway = 1\n) as label",
         "type": "postgis",
         "user": "osm"
@@ -673,6 +690,23 @@
       "class": "",
       "Datasource": {
         "file": "data/m.geojson"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "moterway",
+      "id": "moterway",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "data/moterway.sqlite",
+        "table": "(SELECT * FROM moterway order by zorder DESC)",
+        "attachdb": "",
+        "extent": "",
+        "type": "sqlite",
+        "id": "moterway",
+        "project": "osm-bright",
+        "srs": null
       }
     },
     {

@@ -6,26 +6,12 @@
     43
   ],
   "center": [
-    -72.45867657661424,
-    41.22699199927763,
-    6
+    -70.91526913642862,
+    42.224610339621435,
+    10
   ],
   "format": "png",
-  "interactivity": {
-    "layer": "moterway",
-    "template_teaser": "<dl><dt>name</dt><dd>{{{streetname}}}</dd><dt>aka</dt><dd> {{{routesyste}}}{{{routenumbe}}}</dd><dt>functional class</dt><dd>{{functional}}}</dd><dt>jurisdiction</dt><dd>{{{jurisdicti}}}</dd><dt>NHS Status</dt><dd>{{{nhsstatus}}}</dd><dt>Federal Aid</dt><dd>{{{federalaid}}}</dd></dl>",
-    "template_full": "",
-    "template_location": "",
-    "fields": [
-      "streetname",
-      "routesyste",
-      "routenumbe",
-      "functional",
-      "jurisdicti",
-      "nhsstatus",
-      "federalaid"
-    ]
-  },
+  "interactivity": false,
   "minzoom": 0,
   "maxzoom": 18,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",

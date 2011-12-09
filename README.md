@@ -13,6 +13,8 @@ This version is aimed at displaying massachussetts best, and uses shapefiles fro
 
 11/18/11 added walking paths, fixed shield icons (yes I know thats a modified california us route shield, but the square background looked too much like the state one) havn't fixed placement. added walking paths (you'll need to redownload the datafile) modified mbta colors and icons based on their style guide.  Added more poi. Updated osm-bright.imposm.mml to actually take into account my changes (the absolute paths in there will be overwritten by configure.py). Added some more poi including survailance (and added an icon for it) and towers(need to add icons for different types). On second though, too many bus routes, at low zooms it clogs up the map, and high enough that they don't dominate it's to close in to see all of them, so not putting in bus routes, more apropriate for an overlay. 
 
+12/9/11: some finishing up, switched many of the .geojson files to sqlite, and changed the sintax to make it easier to swap in osm data, next up, seperate it into more modulare layers to make it work with tilestache
+
 [Carto]: http://github.com/mapbox/carto/
 [TileMill]: http://tilemill.com/
 [issue tracker]: http://github.com/developmentseed/osm-bright/issues/
@@ -123,7 +125,7 @@ Open up the configure.py script included in in here and download the two layers 
 for the icons your going to need to grab my fork of the [open svg map icon set](https://github.com/calvinmetcalf/Open-SVG-Map-Icons) then you need to run the script called "generatepng.sh" in tools and then eitehr copy or link the png folder into the osm-bright folder (i.e. into the folder that also has res in it).  your going to also want to grab the [zip file here][] unzip the folder called "data" and also link or move that into the osm-bright folder. If you don't have the Ubuntu font and want to use it, you can get it from the [ubuntu site][].
 
 
-[zip file here]: http://services.massdot.state.ma.us/maptemplate/downloads/data.zip
+[zip file here]: http://dl.dropbox.com/u/37626989/data.zip
 [ubuntu site]: http://font.ubuntu.com/
 
 ## TODO ##
