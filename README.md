@@ -140,42 +140,55 @@ if you just want to get this working, fast just do what I do
 2. make sure the user is named planner
 3. then open up your terminal and type in
 
-	curl -O http://download.geofabrik.de/osm/north-america/us-northeast.osm.pbf -O http://dl.dropbox.com/u/37626989/data.zip -O http://tile.openstreetmap.org/processed_p.tar.bz2 -O http://tile.openstreetmap.org/shoreline_300.tar.bz2 #download some stuff we need
+	wget http://download.geofabrik.de/osm/north-america/us-northeast.osm.pbf http://dl.dropbox.com/u/37626989/data.zip http://tile.openstreetmap.org/processed_p.tar.bz2 http://tile.openstreetmap.org/shoreline_300.tar.bz2 #download some stuff we need
 
 4. this will take a while, open up a new tab in the terminal and run the folling as that downlaods
 
 	sudo apt-add-repository ppa:developmentseed/mapbox #install tilemill ppa
+
 	sudo apt-get update
+
 	sudo apt-get install git-core git-gui git-doc librsvg2-bin imagemagick
+
 	sudo apt-get install tilemill build-essential python-dev protobuf-compiler libprotobuf-dev libtokyocabinet-dev python-psycopg2 libgeos-c1 python-pip postgresql-9.1-postgis postgresql-contrib-9.1 postgis 
 
 5. while this goes on, you can open up a new tab and do 
 
 	git clone git://github.com/calvinmetcalf/osm-bright.git # note to self, use git clone git@github.com:calvinmetcalf/osm-bright.git
+
 	git clone git://github.com/calvinmetcalf/Open-SVG-Map-Icons.git #now we make the icons
+
 	cd Open-SVG-Map-Icons/tools
+
 	./generatepng.sh
+
 	cd 
+
 	ln -s /home/planner/Open-SVG-Map-Icons/png osm-bright/osm-bright/png #linking them
-	sudo chmod a+x osm-bright/imposm9-1.sh #make the script for db creation executable
 	
 6. make sure the very first tab is finished before doing the following
 	
 	unzip data.zip
+
 	tar xf shoreline_300.tar.bz2
+
 	tar xf processed_p.tar.bz2
 
 7. make sure that the 2nd tab is done before doing the following
 
 	sudo pip install imposm
+
 	sudo su postgres
+
 	sh ./osm-bright/imposm9-1.sh
+
 	exit
+
 	imposm --read --write --optimize --deploy-production-tables -m osm-bright/brightmapping.py -d osm us-northeast.osm.pbf #the import
 
-8. once this is done importing you should open tilemill up in the application menu, then in the terminal 
+8. once this is done importing (takes 14 minutes on an 11 core virtual machine running on a 7 core windows machine) you should open tilemill up in the application menu, then in the terminal 
 
-	ln -s /home/planner/osm-bright/osm-bright osm-bright/osm-bright
+	ln -s /home/planner/osm-bright/osm-bright Documents/MapBox/project/osm-bright
 
 9. and your done
 	
