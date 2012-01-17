@@ -166,7 +166,6 @@ if you just want to get this working, fast just do what I do
 	tar xf processed_p.tar.bz2
 
 7. make sure that the 2nd tab is done before doing the following
-
 	sudo pip install imposm
 	sudo su postgres
 	sh ./osm-bright/imposm9-1.sh
