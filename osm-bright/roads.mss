@@ -146,24 +146,242 @@
   marker-allow-overlap:true;
 }
 */
-/* = 2. ROAD WIDTHS =============================================== */
+/*BIKES GO HERE*/
+#cycle{
+[type = 'Off-road shared use path']{
+[zoom=14]{
+ ::case { line-width:2+1.5;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:4,2;
+  line-color:#c00;
+  }
+  }
+  [zoom=15]{
+ ::case { line-width:2+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:4,2;
+  line-color:#c00;
+  }
+  }
+ [zoom=16]{
+ ::case { line-width:4+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:4,2;
+  line-color:#c00;
+  }
+  }
+  [zoom=17]{
+ ::case { line-width:8+3;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:4,2;
+  line-color:#c00;
+  }
+  }
+  [zoom=18]{
+ ::case { line-width:10+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:10;
+  line-dasharray:4,2;
+  line-color:#c00;
+  }
+  }
+   }
+[type = 'On-road marked lane']{
+[zoom=15]{
+ ::case { line-width:2+1.5;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#0025E0;
+  }
+  }
+[zoom=16]{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#0025E0;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#0025E0;
+  }
+  }
+[zoom=18]{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#0025E0;
+  }
+  }
+}
+[type = 'On-road divided lane']{
+[zoom=15]{
+ ::case { line-width:2+1.5;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=16]{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+[zoom=18]{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#e04b00;
+  }
+  }
+}
+[type = 'Off-road minimally improved path']{
+[zoom=16]{
+ ::case { line-width:2+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:2;
+  line-dasharray:4,2;
+  line-color:#360;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:4+2;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:4;
+  line-dasharray:4,2;
+  line-color:#360;
+  }
+  }
+[zoom=18]{
+ ::case { line-width:8+3;
+  line-dasharray:4,2;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:8;
+  line-dasharray:4,2;
+  line-color:#360;
+  }
+  }
+}
 
-/* Grouped by zoom-level, then type. Order low to high priority.
-   The math functions used in the casing line width definitions are
-   not technically necessary, but are there to better show how much
-   of an outline is provided. (eg. A 1px outline on both sides of a
-   3px line is `line-width: 3+2;`.) */
-
-/* ---- Zoom level 5 ---------------------------------------------- */
-
-
-
-/* ---- Zoom level 6 ---------------------------------------------- */
-
-
-
-/* ---- Zoom level 7 ---------------------------------------------- */
-
+[type = 'On-road marked shared lane']{
+[zoom=16]{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=18]{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+  ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+}
+[type = 'On-road sign-posted bike route']{
+[zoom=16]{
+ ::case { line-width:2+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:2;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=17]{
+ ::case { line-width:4+2;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:4;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+[zoom=18]{
+ ::case { line-width:8+3;
+  line-dasharray:8,4;
+  line-color:@standard_case;
+  }
+   ::fill { line-width:8;
+  line-dasharray:8,4;
+  line-color:#360;
+  }
+  }
+}
+}
 
 
 /* ---- Zoom level 8 ----------------------------------------------
@@ -281,39 +499,7 @@
 
 
 /* ---- Zoom level 14 --------------------------------------------- */
-[zoom=15]#bike[type='On-road marked lane']{
- ::case { line-width:2+1.5;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:8,4;
-  line-color:#0025E0;
-  }
-  }
-[zoom=15]#bike[type='On-road divided lane']{
- ::case { line-width:2+1.5;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:8,4;
-  line-color:#e04b00;
-  }
-  }
-[zoom=14]#bike[type='Off-road shared use path']{
- ::case { line-width:2+1.5;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:4,2;
-  line-color:#c00;
-  }
-  }
 
-  
- 
 #subway[zoom=14]
 { ::case { line-width: 3+2;
   [LINE='RED']
@@ -347,68 +533,6 @@
 
 
 /* ---- Zoom level 15 --------------------------------------------- */
-[zoom=16]#bike[type='Off-road minimally improved path']{
- ::case { line-width:2+2;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-  ::fill { line-width:2;
-  line-dasharray:4,2;
-  line-color:#360;
-  }
-  }
-
-[zoom=16]#bike[type='On-road marked shared lane']{
- ::case { line-width:2+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-  ::fill { line-width:2;
-  line-dasharray:8,4;
-  line-color:#360;
-  }
-  }
-[zoom=16]#bike[type='On-road sign-posted bike route']{
- ::case { line-width:2+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:8,4;
-  line-color:#360;
-  }
-  }
-[zoom=16]#bike[type='On-road marked lane']{
- ::case { line-width:2+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:8,4;
-  line-color:#0025E0;
-  }
-  }
-[zoom=16]#bike[type='On-road divided lane']{
- ::case { line-width:2+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:8,4;
-  line-color:#e04b00;
-  }
-  }
-[zoom=15]#bike[type='Off-road shared use path']{
- ::case { line-width:2+2;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:2;
-  line-dasharray:4,2;
-  line-color:#c00;
-  }
-  }
-  
 
 #subway[zoom=15]
 { ::case { line-width: 5+2;
@@ -441,67 +565,7 @@
  
 
 /* ---- Zoom level 16 --------------------------------------------- */
-[zoom=17]#bike[type='Off-road minimally improved path']{
- ::case { line-width:4+2;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-  ::fill { line-width:4;
-  line-dasharray:4,2;
-  line-color:#360;
-  }
-  }
-[zoom=17]#bike[type='On-road marked shared lane']{
- ::case { line-width:4+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-  ::fill { line-width:4;
-  line-dasharray:8,4;
-  line-color:#360;
-  }
-  }
-[zoom=17]#bike[type='On-road sign-posted bike route']{
- ::case { line-width:4+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:4;
-  line-dasharray:8,4;
-  line-color:#360;
-  }
-  }
-[zoom=17]#bike[type='On-road marked lane']{
- ::case { line-width:4+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:4;
-  line-dasharray:8,4;
-  line-color:#0025E0;
-  }
-  }
-[zoom=17]#bike[type='On-road divided lane']{
- ::case { line-width:4+2;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:4;
-  line-dasharray:8,4;
-  line-color:#e04b00;
-  }
-  }
-[zoom=16]#bike[type='Off-road shared use path']{
- ::case { line-width:4+2;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:4;
-  line-dasharray:4,2;
-  line-color:#c00;
-  }
-  }
- 
+
 
 #subway[zoom=16]
 { ::case { line-width: 7+2.5;
@@ -535,69 +599,6 @@
 
 
 /* ---- Zoom level 17 --------------------------------------------- */
-[zoom=18]#bike[type='Off-road minimally improved path']{
- ::case { line-width:8+3;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-  ::fill { line-width:8;
-  line-dasharray:4,2;
-  line-color:#360;
-  }
-  }
-[zoom=18]#bike[type='On-road marked shared lane']{
- ::case { line-width:8+3;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-  ::fill { line-width:8;
-  line-dasharray:8,4;
-  line-color:#360;
-  }
-  }
-[zoom=18]#bike[type='On-road sign-posted bike route']{
- ::case { line-width:8+3;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:8;
-  line-dasharray:8,4;
-  line-color:#360;
-  }
-  }
-
-[zoom=18]#bike[type='On-road marked lane']{
- ::case { line-width:8+3;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:8;
-  line-dasharray:8,4;
-  line-color:#0025E0;
-  }
-  }
-[zoom=18]#bike[type='On-road divided lane']{
- ::case { line-width:8+3;
-  line-dasharray:8,4;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:8;
-  line-dasharray:8,4;
-  line-color:#e04b00;
-  }
-  }
-[zoom=17]#bike[type='Off-road shared use path']{
- ::case { line-width:8+3;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:8;
-  line-dasharray:4,2;
-  line-color:#c00;
-  }
-  }
- 
- 
 
 #subway[zoom=17]
 { ::case { line-width: 9+3;
@@ -630,16 +631,9 @@
 
 
 /* ---- Zoom level 18 --------------------------------------------- */
-[zoom=18]#bike[type='Off-road shared use path']{
- ::case { line-width:10+2;
-  line-dasharray:4,2;
-  line-color:@standard_case;
-  }
-   ::fill { line-width:10;
-  line-dasharray:4,2;
-  line-color:#c00;
-  }
-  }
+
+
+
   
 #subway[zoom=18]
 { ::case { line-width: 18+3;
