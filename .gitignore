@@ -1,5 +1,13 @@
-osm-bright/layers
-osm-bright/data/*
-osm-bright/png
-
+base/layers
+base/data/*
+base/png
+features/layers
+features/data/*
+features/png
+labels/layers
+labels/data/*
+labels/png
+roads/layers
+roads/data/*
+roads/png
 
