@@ -1,0 +1,60 @@
+{
+  "bounds": [
+    -74,
+    41,
+    -69,
+    43
+  ],
+  "center": [
+    -71.07440996170014,
+    42.3532019565534,
+    16
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "moterway",
+    "template_full": "<dl><dt>Name:</dt><dd>{{{streetname}}}</dd>\n<dt>Route:</dt><dd>{{{routesyste}}}:{{{routenumbe}}}{{{routedirec}}}</dd>\n<dt>Functional Class:</dt><dd>{{{functional}}}</dd>\n<dt>Jurisdiction:</dt><dd>{{{jurisdicti}}}</dd>\n<dt>Truck Route:</dt><dd>{{{truckroute}}}</dd>\n<dt>NHS Status</dt><dd>{{{nhsstatus}}}</dd><dt>Federal Aid</dt><dd>{{{federalaid}}}</dd>",
+    "template_teaser": "{{{streetname}}}",
+    "fields": [
+      "streetname",
+      "routesyste",
+      "routenumbe",
+      "routedirec",
+      "functional",
+      "jurisdicti",
+      "truckroute",
+      "nhsstatus",
+      "federalaid"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "palette.mss",
+    "moterway.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "linestring",
+      "name": "moterway",
+      "id": "moterway",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "data/moterway.sqlite",
+        "table": "(SELECT * FROM moterway order by zorder DESC)",
+        "attachdb": "",
+        "extent": "",
+        "type": "sqlite",
+        "id": "moterway",
+        "project": "osm-bright",
+        "srs": null
+      }
+    }
+  ],
+  "name": "roads",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}

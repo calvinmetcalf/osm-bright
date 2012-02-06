@@ -1,0 +1,360 @@
+{
+  "bounds": [
+    -74,
+    41,
+    -69,
+    43
+  ],
+  "center": [
+    -71.07440996170014,
+    42.3532019565534,
+    16
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_full": "<dl><dt>Name:</dt><dd>{{{streetname}}}</dd>\n<dt>Route:</dt><dd>{{{routesyste}}}:{{{routenumbe}}}{{{routedirec}}}</dd>\n<dt>Functional Class:</dt><dd>{{{functional}}}</dd>\n<dt>Jurisdiction:</dt><dd>{{{jurisdicti}}}</dd>\n<dt>Truck Route:</dt><dd>{{{truckroute}}}</dd>\n<dt>NHS Status</dt><dd>{{{nhsstatus}}}</dd><dt>Federal Aid</dt><dd>{{{federalaid}}}</dd>",
+    "template_teaser": "{{{streetname}}}",
+    "fields": [
+      "streetname",
+      "routesyste",
+      "routenumbe",
+      "routedirec",
+      "functional",
+      "jurisdicti",
+      "truckroute",
+      "nhsstatus",
+      "federalaid"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "palette.mss",
+    "roads.mss",
+    "places.mss"
+  ],
+  "Layer": [
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "aeroway",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type from osm_aeroways\n) as aeroway",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "aeroway",
+      "name": "aeroway",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "rail",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, tunnel\nfrom osm_railways\n) as railway",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "rail",
+      "name": "rail",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "table": "(select geometry, type, park_ride from osm_amenities) as am",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "am",
+        "project": "osm-bright",
+        "srs": null
+      },
+      "class": "am",
+      "geometry": "point",
+      "id": "am",
+      "name": "am",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "geometry": "linestring",
+      "name": "ComLine",
+      "id": "ComLine",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/trainrt.geojson"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "subway",
+      "id": "subway",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/subway.geojson"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "ped",
+      "id": "ped",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/ped.geojson"
+      }
+    },
+    {
+      "geometry": "unknown",
+      "name": "cycle",
+      "id": "cycle",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "data/bike.sqlite",
+        "table": "bike",
+        "attachdb": "",
+        "extent": "",
+        "type": "sqlite",
+        "id": "cycle",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "stop",
+      "id": "stop",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/substop.geojson"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "ComSt",
+      "id": "ComSt",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/trainst.geojson"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "power",
+      "id": "power",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select * from osm_power) as power",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "power",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "manmade",
+      "id": "manmade",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select * from osm_manmade) as manmade",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "manmade",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "trans",
+      "id": "trans",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": " (select geometry, type, ref from osm_transport_points ) as trans",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "trans",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "info",
+      "id": "info",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select * from osm_info) as info",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "info",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "tourism",
+      "id": "tourism",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select * from osm_tourism) as tourism",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "tourism",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "shop",
+      "id": "shop",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select* from osm_shops) as shops",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "amenity",
+      "id": "amenity",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "(select geometry, type, park_ride, religion, denomination from osm_amenities) as amenity",
+        "key_field": "",
+        "geometry_field": "geometry",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "osm",
+        "host": "localhost",
+        "port": "5432",
+        "user": "osm",
+        "password": "osm",
+        "id": "amenity",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "rest",
+      "id": "rest",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/restareas.geojson"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "si",
+      "id": "si",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/si.geojson"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "fuel",
+      "id": "fuel",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/fuel.geojson"
+      }
+    }
+  ],
+  "name": "features",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}

@@ -1,0 +1,241 @@
+{
+  "bounds": [
+    -74,
+    41,
+    -69,
+    43
+  ],
+  "center": [
+    -71.07440996170014,
+    42.3532019565534,
+    16
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_full": "<dl><dt>Name:</dt><dd>{{{streetname}}}</dd>\n<dt>Route:</dt><dd>{{{routesyste}}}:{{{routenumbe}}}{{{routedirec}}}</dd>\n<dt>Functional Class:</dt><dd>{{{functional}}}</dd>\n<dt>Jurisdiction:</dt><dd>{{{jurisdicti}}}</dd>\n<dt>Truck Route:</dt><dd>{{{truckroute}}}</dd>\n<dt>NHS Status</dt><dd>{{{nhsstatus}}}</dd><dt>Federal Aid</dt><dd>{{{federalaid}}}</dd>",
+    "template_teaser": "{{{streetname}}}",
+    "fields": [
+      "streetname",
+      "routesyste",
+      "routenumbe",
+      "routedirec",
+      "functional",
+      "jurisdicti",
+      "truckroute",
+      "nhsstatus",
+      "federalaid"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "palette.mss",
+    "base.mss",
+    "places.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "linestring",
+      "name": "town",
+      "id": "town",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/town.geojson"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "count",
+      "id": "count",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/count10.geojson"
+      }
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "",
+        "host": "localhost",
+        "id": "admin",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright",
+        "table": "osm_admin",
+        "type": "postgis",
+        "user": "osm",
+        "srs": null
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "admin",
+      "name": "admin",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "geometry": "polygon",
+      "name": "out",
+      "id": "out",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/states.geojson"
+      }
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "landuse_label",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, name, round(st_area(geometry)) as area\nfrom osm_landusages\nwhere name is not null\norder by area desc) as label",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "landuse_label",
+      "name": "landuse_label",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "water_label",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, name, round(st_area(geometry)) as area\nfrom osm_waterareas\nwhere type != 'riverbank' and name is not null\n) as label",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "water_label",
+      "name": "water_label",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "waterway_label",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, name, round(st_length(geometry)) as length\nfrom osm_waterways\nwhere type in ('canal', 'river', 'stream') and name is not null\n) as label",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "waterway_label",
+      "name": "waterway_label",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "geometry": "linestring",
+      "name": "ls",
+      "id": "ls",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/ls.geojson"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "ts",
+      "id": "ts",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/ts.geojson",
+        "id": "ts",
+        "project": "osm-bright",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "ss",
+      "id": "ss",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/ss.geojson"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "ps",
+      "id": "ps",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/ps.geojson"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "ms",
+      "id": "ms",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "data/ms.geojson"
+      }
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "place",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright",
+        "srs": null,
+        "table": "(select geometry, type, name, z_order, population\nfrom osm_places\norder by z_order, population desc\n) as places",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "point",
+      "id": "place",
+      "name": "place",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    }
+  ],
+  "name": "labels",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}

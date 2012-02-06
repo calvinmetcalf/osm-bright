@@ -1,0 +1,872 @@
+#ms{
+[zoom=8]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+[zoom=9]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+  [zoom=10]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+  [zoom=11]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+  [zoom=12]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+  [zoom=13]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+  [zoom>13]{
+[three=0]
+{
+    shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/I16.png);
+  }
+  [three=1]
+{
+     shield-min-distance:30;
+  shield-spacing:90;
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-size:10;
+    shield-fill:#fff;
+      shield-text-dx:1;
+   shield-file:url(res/IW16.png);
+  }
+}
+  }
+  #ps{
+[zoom=9]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=10]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=11]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:50;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:50;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=12]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+   [zoom=13]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=14]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:60;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:60;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+   [zoom>14]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+}
+#ss{
+ [zoom=11] {
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=12] {
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=13] {
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom=14] {
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+  [zoom>14] {
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:30;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+}
+#ts[zoom>13]
+{
+[RouteSyste='US']
+{
+      [three=0]
+      {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  shield-file:url(res/US16.png);
+  }
+    [three=1]
+      {
+     shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+      shield-file:url(res/USW16.png);
+  }
+  }
+[RouteSyste='SR']
+{
+  [three=0]
+{
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MA16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  [three=1]
+  {
+  shield-name:'[RouteNumbe]';
+  shield-face-name:@sans;
+   shield-file:url(res/MAW16.png);
+  shield-fill:#000;
+  shield-size:10;
+  shield-min-distance:90;
+  shield-spacing:90;
+  }
+  }
+}
+#ls{
+  [zoom=15] {
+  text-name:'[StreetName]';
+  text-face-name:@sans;
+  text-placement:line;
+  text-size:9;
+  text-fill:#444;
+  text-halo-fill:#fff;
+  text-halo-radius:1;
+  text-min-distance:20;
+  text-spacing:90;
+  text-size:11;
+}
+[zoom=16] {
+  text-name:'[StreetName]';
+  text-face-name:@sans;
+  text-placement:line;
+  text-size:9;
+  text-fill:#444;
+  text-halo-fill:#fff;
+  text-halo-radius:1;
+  text-min-distance:7;
+  text-spacing:60;
+  text-size:11;
+}
+[zoom=17] {
+  text-name:'[StreetName]';
+  text-face-name:@sans;
+  text-placement:line;
+  text-size:9;
+  text-fill:#444;
+  text-halo-fill:#fff;
+  text-halo-radius:1;
+    text-min-distance:7;
+  text-spacing:60;
+  text-size:11;
+}
+  [zoom=18] {
+  text-name:'[StreetName]';
+  text-face-name:@sans;
+  text-placement:line;
+  text-size:9;
+  text-fill:#444;
+  text-halo-fill:#fff;
+  text-halo-radius:1;
+    text-min-distance:30;
+  text-spacing:60;
+  text-size:11;
+}
+}
+/* == 4. RAILWAYS ================================================= */
+
+/* TODO: fancier railway styling with casing, thicker lines
+#rail[zoom>7] {
+  line-color:@rail_line;
+  line-dasharray:3,2;
+  line-width:0.5;
+  [tunnel=1] { line-opacity:0.5; }
+  [zoom>9] { line-width:1; }
+}*/
+/*[type='subway']#rail[zoom>9]{
+line-color:#ff0000;
+line-width:2;
+  }*/
+
+/* == 5. AEROWAYS ================================================= */

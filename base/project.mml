@@ -1,0 +1,298 @@
+{
+  "bounds": [
+    -74,
+    41,
+    -69,
+    43
+  ],
+  "center": [
+    -71.07440996170014,
+    42.3532019565534,
+    16
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "",
+    "template_full": "",
+    "template_teaser": "",
+    "fields": [
+      "streetname",
+      "routesyste",
+      "routenumbe",
+      "routedirec",
+      "functional",
+      "jurisdicti",
+      "truckroute",
+      "nhsstatus",
+      "federalaid"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 18,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "palette.mss",
+    "base.mss"
+  ],
+  "Layer": [
+    {
+      "Datasource": {
+        "file": "data/10m-land.geojson"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "land",
+      "name": "land",
+      "srs": "",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "file": "/home/planner/processed_p.shp"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "processed_p",
+      "name": "processed_p",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "file": "/home/planner/shoreline_300.shp"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "shoreline_300",
+      "name": "shoreline_300",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "landuse_gen0",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright-imposm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, round(st_area(geometry)) as area\nfrom osm_landusages_gen0\norder by area desc) as landusages",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "landuse_gen0",
+      "name": "landuse_gen0",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "landuse_gen1",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright-imposm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, round(st_area(geometry)) as area\nfrom osm_landusages_gen1\norder by area desc) as landusages",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "landuse_gen1",
+      "name": "landuse_gen1",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "landuse",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright-imposm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, round(st_area(geometry)) as area\nfrom osm_landusages\norder by area desc) as landusages",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "landuse",
+      "name": "landuse",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "waterway",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type\nfrom osm_waterways\n) as waterway",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "waterway",
+      "name": "waterway",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "water_gen0",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry\nfrom osm_waterareas\nwhere round(st_area(geometry)) > 10000\n) as water",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "water_gen0",
+      "name": "water_gen0",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "water_gen1",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry\nfrom osm_waterareas\nwhere round(st_area(geometry)) > 1000\n) as water",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "water_gen1",
+      "name": "water_gen1",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "water",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "foss4g-2011",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry\nfrom osm_waterareas\n) as water",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "water",
+      "name": "water",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "landuse_overlays",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright-imposm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "table": "(select geometry, type, round(st_area(geometry)) as area\nfrom osm_landusages\norder by area desc) as landusages",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "id": "landuse_overlays",
+      "name": "landuse_overlays",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "table": "(select type, name, geometry from osm_buildings) as foo",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "buildings",
+      "name": "buildings",
+      "srs": "+init=epsg:3785"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "geometry_field": "geometry",
+        "host": "localhost",
+        "id": "transport_areas",
+        "key_field": "",
+        "password": "osm",
+        "port": "5432",
+        "project": "osm-bright",
+        "srs": null,
+        "table": "(select geometry, type\nfrom osm_transport_areas\n) as transport",
+        "type": "postgis",
+        "user": "osm"
+      },
+      "class": "",
+      "geometry": "polygon",
+      "id": "transport_areas",
+      "name": "transport_areas",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "status": "on"
+    }
+  ],
+  "name": "base",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}
